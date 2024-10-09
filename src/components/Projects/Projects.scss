@@ -1,0 +1,42 @@
+.projects {
+  &-list {
+    margin: 4rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+  }
+}
+
+.project {
+  &-card {
+    display: flex;
+    gap: 4rem;
+    &-img {
+      flex: 1;
+    }
+    &-text {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  }
+
+  &-links {
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+  }
+
+  &-tech {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    &-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+    }
+  }
+}

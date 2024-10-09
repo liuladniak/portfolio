@@ -1,0 +1,26 @@
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 0;
+  margin-bottom: 9rem;
+}
+.logo {
+  flex: 1;
+  // text-transform: uppercase;
+  width: 6rem;
+  align-items: end;
+}
+.nav {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}

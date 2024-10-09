@@ -1,0 +1,17 @@
+.app {
+  /* Default styles */
+  min-height: 100vh;
+  transition: background-color 0.3s ease, color 0.3s ease;
+
+  /* Styles for Light Theme */
+  &.light {
+    background-color: white; /* Light background */
+    color: black; /* Light text color */
+  }
+
+  /* Styles for Dark Theme */
+  &.dark {
+    background-color: #1a1a1a; /* Dark background */
+    color: white; /* Light text color */
+  }
+}

@@ -1,7 +1,17 @@
-import "./App.css";
+// import { BrowserRouter, Routes, Route } from "react-router-dom";
+import "./App.scss";
+import { useContext } from "react";
+import "./styles/partials/_globals.scss";
+import Homepage from "./pages/Homepage/Homepage";
+import { ThemeContext } from "./contexts/ThemeContext";
 
 function App() {
-  return <div>app</div>;
+  const { theme } = useContext(ThemeContext);
+  return (
+    <div className={`app ${theme}`}>
+      <Homepage />
+    </div>
+  );
 }
 
 export default App;
