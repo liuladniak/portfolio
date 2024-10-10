@@ -1,5 +1,7 @@
 .projects {
   &-list {
+    max-width: 120rem;
+
     margin: 4rem 0;
     display: flex;
     flex-direction: column;

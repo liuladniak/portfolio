@@ -1,11 +1,19 @@
 .header {
+  max-width: 126rem;
+
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 4rem 0;
   margin-bottom: 9rem;
+  // background-color: #c7d9b7;
+  background-color: #c9b7d9;
+  border-radius: 1.5rem;
+  padding: 1.5rem 3rem;
+  margin-top: 1.5rem;
 }
+
 .logo {
   flex: 1;
   // text-transform: uppercase;

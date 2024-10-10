@@ -1,6 +1,8 @@
 @use "../../styles/partials/variables" as *;
 
 .about {
+  max-width: 120rem;
+
   display: flex;
   flex-direction: column;
   gap: 4rem;
