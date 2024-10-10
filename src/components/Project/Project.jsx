@@ -1,14 +1,19 @@
 import "./Project.scss";
-import project1 from "../../assets/project1.jpg";
+import project1 from "../../assets/images/All-tours-page.png";
+import { Link } from "react-router-dom";
+import githubIcon from "../../assets/icons/github.png";
+import laptopIcon from "../../assets/icons/laptop.webp";
 
 const Project = () => {
   return (
     <article className="project-card">
       <div className="project-card-img">
-        <img src={project1} alt="project thumbnail" />
+        <img className="project-image" src={project1} alt="project thumbnail" />
       </div>
       <div className="project-card-text">
-        <h3>Project 1</h3>
+        <a className="project-title-link" href="https://city-go.netlify.app/">
+          <h3>Travel booking app</h3>
+        </a>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores totam
           magnam quibusdam. Laudantium harum, assumenda ipsam, sed vel numquam
@@ -16,8 +21,18 @@ const Project = () => {
           sequi fugiat?
         </p>
         <div className="project-links">
-          <a href="">Live</a>
-          <a href="">Github</a>
+          <a href="" className="project-resource">
+            <img
+              src={githubIcon}
+              alt="github logo icon"
+              className="resource-icon"
+            />
+            <span>Github</span>
+          </a>
+          <a href="" className="project-resource">
+            <img src={laptopIcon} alt="laptop icon" className="resource-icon" />
+            <span>Live</span>
+          </a>
         </div>
         <div className="project-tech">
           <h3>Technologies used:</h3>
