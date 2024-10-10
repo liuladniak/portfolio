@@ -2,7 +2,7 @@ import "./Project.scss";
 import project1 from "../../assets/images/All-tours-page.png";
 import { Link } from "react-router-dom";
 import githubIcon from "../../assets/icons/github.png";
-import laptopIcon from "../../assets/icons/laptop.webp";
+import laptopIcon from "../../assets/icons/laptop.png";
 
 const Project = () => {
   return (
