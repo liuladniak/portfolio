@@ -25,10 +25,12 @@ const About = () => {
           </div>
 
           <div className="about-socials">
-            <a to="https://github.com/liuladniak">
+            <a href="https://github.com/liuladniak">
               <h2>Github</h2>
             </a>
-            <h2>LinkedIn</h2>
+            <a href="https://www.linkedin.com/in/liuladniak/">
+              <h2>LinkedIn</h2>
+            </a>
           </div>
         </div>
       </div>

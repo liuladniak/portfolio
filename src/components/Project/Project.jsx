@@ -4,16 +4,19 @@ import { Link } from "react-router-dom";
 import githubIcon from "../../assets/icons/github.png";
 import laptopIcon from "../../assets/icons/laptop.png";
 
-const Project = () => {
+const Project = ({ projectsData }) => {
+  console.log(projectsData.title);
   return (
     <article className="project-card">
       <div className="project-card-img">
-        <img className="project-image" src={project1} alt="project thumbnail" />
+        <img
+          className="project-image"
+          src={projectsData.img}
+          alt="project thumbnail"
+        />
       </div>
       <div className="project-card-text">
-        <a className="project-title-link" href="https://city-go.netlify.app/">
-          <h3>Travel booking app</h3>
-        </a>
+        <h3>{projectsData.title}</h3>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores totam
           magnam quibusdam. Laudantium harum, assumenda ipsam, sed vel numquam
@@ -21,7 +24,7 @@ const Project = () => {
           sequi fugiat?
         </p>
         <div className="project-links">
-          <a href="" className="project-resource">
+          <a href={projectsData.github} className="project-resource">
             <img
               src={githubIcon}
               alt="github logo icon"
@@ -29,7 +32,7 @@ const Project = () => {
             />
             <span>Github</span>
           </a>
-          <a href="" className="project-resource">
+          <a href={projectsData.live} className="project-resource">
             <img src={laptopIcon} alt="laptop icon" className="resource-icon" />
             <span>Live</span>
           </a>
