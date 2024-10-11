@@ -21,8 +21,8 @@ const Projects = () => {
       title: "Local Gardens / Decor Store",
       description: "Project description",
       technologies: ["React.js", "Node.js"],
-      github: "https://github.com/liuladniak/travel-booking-app--user",
-      live: "https://city-go.netlify.app/",
+      github: "https://github.com/liuladniak/local-gardens",
+      live: "https://local-gardens.netlify.app/",
     },
 
     {
@@ -32,13 +32,18 @@ const Projects = () => {
       description: "Project description",
       technologies: ["React.js", "Node.js"],
       github: "https://github.com/liuladniak/travel-booking-app--user",
-      live: "https://city-go.netlify.app/",
+      live: "https://sunset-pizza-shop.netlify.app/",
+      live2: "https://sunset-shop.netlify.app/",
     },
   ];
   return (
     <section>
       <h2>Projects</h2>
       <div className="projects-list">
+        {projectsData.map((projectData) => {
+          return <Project key={projectData.id} projectData={projectData} />;
+        })}
+
         <Project projectsData={projectsData[0]} />
         <Project projectsData={projectsData[1]} />
         <Project projectsData={projectsData[2]} />

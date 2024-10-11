@@ -4,19 +4,19 @@ import { Link } from "react-router-dom";
 import githubIcon from "../../assets/icons/github.png";
 import laptopIcon from "../../assets/icons/laptop.png";
 
-const Project = ({ projectsData }) => {
-  console.log(projectsData.title);
+const Project = ({ projectData }) => {
+  console.log(projectData.title);
   return (
     <article className="project-card">
       <div className="project-card-img">
         <img
           className="project-image"
-          src={projectsData.img}
+          src={projectData.img}
           alt="project thumbnail"
         />
       </div>
       <div className="project-card-text">
-        <h3>{projectsData.title}</h3>
+        <h3>{projectData.title}</h3>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores totam
           magnam quibusdam. Laudantium harum, assumenda ipsam, sed vel numquam
@@ -24,7 +24,7 @@ const Project = ({ projectsData }) => {
           sequi fugiat?
         </p>
         <div className="project-links">
-          <a href={projectsData.github} className="project-resource">
+          <a href={projectData.github} className="project-resource">
             <img
               src={githubIcon}
               alt="github logo icon"
@@ -32,10 +32,20 @@ const Project = ({ projectsData }) => {
             />
             <span>Github</span>
           </a>
-          <a href={projectsData.live} className="project-resource">
+          <a href={projectData.live} className="project-resource">
             <img src={laptopIcon} alt="laptop icon" className="resource-icon" />
             <span>Live</span>
           </a>
+          {projectData.live2 && (
+            <a href={projectData.live2} className="project-resource">
+              <img
+                src={laptopIcon}
+                alt="laptop icon"
+                className="resource-icon"
+              />
+              <span>Live</span>
+            </a>
+          )}
         </div>
         <div className="project-tech">
           <h3>Technologies used:</h3>
