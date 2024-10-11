@@ -43,13 +43,6 @@ const Projects = () => {
         {projectsData.map((projectData) => {
           return <Project key={projectData.id} projectData={projectData} />;
         })}
-
-        <Project projectsData={projectsData[0]} />
-        <Project projectsData={projectsData[1]} />
-        <Project projectsData={projectsData[2]} />
-        {/* <Project />
-        <Project />
-        <Project /> */}
       </div>
     </section>
   );
