@@ -43,7 +43,7 @@ const Project = ({ projectData }) => {
                 alt="laptop icon"
                 className="resource-icon"
               />
-              <span>Live</span>
+              <span>Live.v1</span>
             </a>
           )}
         </div>

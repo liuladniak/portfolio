@@ -23,6 +23,7 @@ const Projects = () => {
       technologies: ["React.js", "Node.js"],
       github: "https://github.com/liuladniak/local-gardens",
       live: "https://local-gardens.netlify.app/",
+      live2: "https://local-gardens-base.netlify.app/",
     },
 
     {
