@@ -1,17 +1,28 @@
-// import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import "./App.scss";
-import { useContext } from "react";
 import "./styles/partials/_globals.scss";
 import Homepage from "./pages/Homepage/Homepage";
-import { ThemeContext } from "./contexts/ThemeContext";
+import AppLayout from "./components/AppLoayout/AppLayout";
+import CityGo from "./pages/CityGo/CityGo";
+
+const router = createBrowserRouter([
+  {
+    element: <AppLayout />,
+    children: [
+      {
+        path: "/",
+        element: <Homepage />,
+      },
+      {
+        path: "/city-go",
+        element: <CityGo />,
+      },
+    ],
+  },
+]);
 
 function App() {
-  const { theme } = useContext(ThemeContext);
-  return (
-    <div className={`app ${theme}`}>
-      <Homepage />
-    </div>
-  );
+  return <RouterProvider router={router} />;
 }
 
 export default App;

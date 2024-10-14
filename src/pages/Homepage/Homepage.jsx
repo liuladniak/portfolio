@@ -5,11 +5,11 @@ import "./Homepage.scss";
 
 const Homepage = () => {
   return (
-    <main className="main">
-      <Header />
+    <>
+      {/* <Header /> */}
       <About />
-      <Projects></Projects>
-    </main>
+      <Projects />
+    </>
   );
 };
 
