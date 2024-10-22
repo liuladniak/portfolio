@@ -26,7 +26,6 @@ const Projects = () => {
       technologies: ["React.js", "Node.js"],
       github: "https://github.com/liuladniak/local-gardens",
       live: "https://local-gardens.netlify.app/",
-      live2: "https://local-gardens-base.netlify.app/",
     },
 
     {
@@ -37,7 +36,6 @@ const Projects = () => {
       technologies: ["React.js", "Node.js"],
       github: "https://github.com/liuladniak/travel-booking-app--user",
       live: "https://sunset-pizza-shop.netlify.app/",
-      live2: "https://sunset-shop.netlify.app/",
     },
     // {
     //   id: 4,

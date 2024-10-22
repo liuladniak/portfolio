@@ -10,6 +10,7 @@ const AppLayout = () => {
   return (
     <div className={`app ${theme}`}>
       <Header />
+
       <main className="main">
         <Outlet />
       </main>

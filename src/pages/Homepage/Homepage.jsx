@@ -1,5 +1,5 @@
 import About from "../../components/About/About";
-import Header from "../../components/Header/Header";
+// import Header from "../../components/Header/Header";
 import Projects from "../../components/Projects/Projects";
 import "./Homepage.scss";
 
