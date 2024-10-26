@@ -1,8 +1,10 @@
-.projects {
-  &-list {
-    max-width: 120rem;
+@use "../../styles/partials/variables" as *;
 
-    margin: 4rem 0;
+.projects {
+  max-width: 112rem;
+  width: 100%;
+  color: $main--1;
+  &-list {
     display: flex;
     flex-direction: column;
     gap: 6rem;

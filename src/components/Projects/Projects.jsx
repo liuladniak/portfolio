@@ -13,7 +13,8 @@ const Projects = () => {
       img: project1Img,
       video: videoProject1,
       title: "CityGo / Travel booking app",
-      description: "Project description",
+      description:
+        "Developed a SaaS-based analytics dashboard for Insightly, focusing on providing actionable insights through a user-centric design. The dashboard improved data accessibility and was adopted by 80% of users within the first three months.",
       technologies: ["React.js", "Node.js"],
       github: "https://github.com/liuladniak/travel-booking-app--user",
       live: "https://city-go.netlify.app/",
@@ -37,30 +38,10 @@ const Projects = () => {
       github: "https://github.com/liuladniak/travel-booking-app--user",
       live: "https://sunset-pizza-shop.netlify.app/",
     },
-    // {
-    //   id: 4,
-    //   img: project3Img,
-    //   title: "Instock / Dashboard",
-    //   description: "Project description",
-    //   technologies: ["React.js", "Node.js"],
-    //   github: "https://github.com/liuladniak/instock",
-    //   live: "https://sunset-pizza-shop.netlify.app/",
-    //   live2: "https://sunset-shop.netlify.app/",
-    // },
-    // {
-    //   id: 5,
-    //   img: project3Img,
-    //   title: "Brainflix",
-    //   description: "Project description",
-    //   technologies: ["React.js", "Node.js"],
-    //   github: "https://github.com/liuladniak/brainflix",
-    //   live: "https://sunset-pizza-shop.netlify.app/",
-    //   live2: "https://sunset-shop.netlify.app/",
-    // },
   ];
   return (
-    <section>
-      <h2>Projects</h2>
+    <section id="projects" className="projects">
+      {/* <h2>Projects</h2> */}
       <div className="projects-list">
         {projectsData.map((projectData) => {
           return <Project key={projectData.id} projectData={projectData} />;

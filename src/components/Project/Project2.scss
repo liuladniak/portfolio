@@ -1,0 +1,41 @@
+.project__title {
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 2.2rem;
+}
+
+.project-card {
+  background-color: #c7d9b756;
+  padding: 3rem;
+  border-radius: 1.5rem;
+}
+
+.project-card-img {
+  width: 50rem;
+  height: 34rem;
+  overflow: hidden;
+  position: relative;
+  border-radius: 1.5rem;
+}
+
+.project-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.project-title-link {
+  cursor: pointer;
+}
+
+.resource-icon {
+  width: 3rem;
+  height: 3rem;
+}
+
+.project-resource {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}

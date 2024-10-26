@@ -39,8 +39,10 @@ html {
 }
 
 body {
-  font-size: 1.6rem;
-  font-family: Lato;
+  font-size: 2rem;
+  font-family: "Source Sans Pro";
+  background-color: $main--1;
+  color: $main--4;
   &::-webkit-scrollbar {
     display: none;
   }
