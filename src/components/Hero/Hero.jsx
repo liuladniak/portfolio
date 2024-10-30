@@ -1,6 +1,6 @@
 import "./Hero.scss";
 
-const Hero = () => {
+const Hero = ({ heading, desc }) => {
   return (
     <section className="hero">
       <div className="hero__col">

@@ -3,7 +3,7 @@ import "./App.scss";
 import "./styles/partials/_globals.scss";
 import Homepage from "./pages/Homepage/Homepage";
 import AppLayout from "./components/AppLoayout/AppLayout";
-import CityGo from "./pages/CityGo/CityGo";
+import ProjectsPage from "./pages/ProjectsPage/ProjectsPage";
 
 const router = createBrowserRouter([
   {
@@ -14,8 +14,16 @@ const router = createBrowserRouter([
         element: <Homepage />,
       },
       {
-        path: "/city-go",
-        element: <CityGo />,
+        path: "/projects",
+        element: <ProjectsPage />,
+      },
+      {
+        path: "/about",
+        element: <Homepage />,
+      },
+      {
+        path: "/connect",
+        element: <Homepage />,
       },
     ],
   },

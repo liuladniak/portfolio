@@ -1,6 +1,6 @@
-import "./Projects.scss";
+import "./ProjectsList.scss";
 import Project from "../Project/Project";
-import project1Img from "../../assets/images/All-tours-page.png";
+import project1Img from "../../assets/images/Homepage.png";
 import project2Img from "../../assets/images/Local Gardens Homepage.png";
 import project3Img from "../../assets/images/PizzaShop.png";
 import videoProject1 from "../../assets/videos/video-project1.mov";
@@ -11,6 +11,7 @@ const Projects = () => {
       id: 1,
       pageRoute: "/city-go",
       img: project1Img,
+      icon: "🚩",
       video: videoProject1,
       title: "CityGo / Travel booking app",
       description:
@@ -22,6 +23,7 @@ const Projects = () => {
     {
       id: 2,
       img: project2Img,
+      icon: "🛍",
       title: "Local Gardens / Decor Store",
       description: "Project description",
       technologies: ["React.js", "Node.js"],
@@ -32,6 +34,7 @@ const Projects = () => {
     {
       id: 3,
       img: project3Img,
+      icon: "🍕",
       title: "Sunset Pizza & Grill / Pizza Shop",
       description: "Project description",
       technologies: ["React.js", "Node.js"],
