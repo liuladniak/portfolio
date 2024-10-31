@@ -1,0 +1,55 @@
+.tab-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+
+  &__heading {
+    font-family: "Nunito";
+    font-size: 3.2rem;
+    font-weight: 600;
+
+    &--page {
+      font-size: 3.6rem;
+    }
+  }
+
+  &__section {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    background-color: #fffffe;
+    border-radius: 1.6rem;
+    padding: 3.2rem;
+  }
+  &__overview {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+  }
+  &__icon {
+    font-size: 6.4rem;
+    line-height: 6.4rem;
+  }
+  &__desc {
+    font-size: 2rem;
+    line-height: 3.2rem;
+  }
+
+  &__tags {
+    display: flex;
+    gap: 1.2rem;
+    font-family: "Nunito";
+    font-size: 1.6rem;
+    line-height: 100%;
+    font-weight: 700;
+  }
+
+  &__tag {
+    padding: 0.8rem 1.6rem;
+    background-color: #e3e3e3;
+    border-radius: 8rem;
+  }
+
+  &__img {
+  }
+}
