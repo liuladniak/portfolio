@@ -8,6 +8,7 @@ import ProjectsPage from "./pages/ProjectsPage/ProjectsPage";
 const router = createBrowserRouter([
   {
     element: <AppLayout />,
+
     children: [
       {
         path: "/",
