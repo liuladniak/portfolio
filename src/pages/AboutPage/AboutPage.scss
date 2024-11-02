@@ -1,0 +1,71 @@
+@use "../../styles/partials/variables" as *;
+
+.about {
+  &-layout {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, 1fr) auto;
+    overflow-x: hidden;
+    grid-template-areas:
+      "text-journey main-img"
+      "sec-img main-img"
+      "third-img text-experience"
+      "third-img forth-img";
+    gap: 2.4rem;
+  }
+
+  &-card {
+    background-color: $main--6;
+    border-radius: 1.6rem;
+    overflow: hidden;
+    padding: 3.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    color: $main--1;
+
+    &__heading {
+      font-size: 3.6rem;
+      font-weight: 600;
+      font-family: "Nunito", sans-serif;
+    }
+
+    &__desc {
+      display: flex;
+      flex-direction: column;
+      gap: 2.4rem;
+      font-size: 2rem;
+    }
+
+    & img {
+      border-radius: 1rem;
+    }
+  }
+
+  &-card--1 {
+    grid-area: text-journey;
+    height: 100%;
+  }
+  &-card--2 {
+    grid-area: main-img;
+    height: 84.5rem;
+    // padding: 0;
+  }
+  &-card--3 {
+    grid-area: sec-img;
+    height: 100%;
+    // padding: 0;
+  }
+  &-card--4 {
+    grid-area: third-img;
+    // padding: 0;
+  }
+  &-card--5 {
+    grid-area: text-experience;
+  }
+  &-card--6 {
+    grid-area: forth-img;
+    // padding: 0;
+  }
+}
