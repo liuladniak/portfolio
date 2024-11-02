@@ -2,19 +2,37 @@
 
 .header {
   margin: 2.4rem auto 3.6rem;
-
   max-width: 70rem;
   width: 100%;
   color: $main--1;
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 6.7rem;
+  overflow: hidden;
+  position: fixed;
+  z-index: 1000;
+
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: backdrop-filter 0.3s ease;
+
+  &.solid-header {
+    background: rgba(255, 255, 255, 1);
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    border-bottom: none;
+    box-shadow: none;
+  }
 }
 
 .nav {
-  background-color: $main--4;
+  // background-color: $main--4;
   padding: 0.8rem;
-  border-radius: 6.7rem;
+  // border-radius: 6.7rem;
   width: 100%;
 
   &-list {

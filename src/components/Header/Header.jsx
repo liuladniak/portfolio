@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import "./Header.scss";
 import darkTheme from "../../assets/icons/dark-theme.svg";
 import logoImg from "../../assets/logos/logo1.png";
@@ -8,12 +8,26 @@ import { Link } from "react-router-dom";
 const Header = () => {
   const { theme, toggleTheme } = useContext(ThemeContext);
   const [activeLink, setActiveLink] = useState("home");
+  const [isScrolled, setIsScrolled] = useState(false);
 
   const handleActiveLink = (link) => {
     setActiveLink(link);
   };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 10);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <header className="header">
+    <header className={`header ${isScrolled ? "" : "solid-header"}`}>
       <nav className="nav">
         <ul className="nav-list">
           <Link
