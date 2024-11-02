@@ -10,34 +10,33 @@ const ConnectPage = () => {
     <>
       <HeroConnect />
       <di className="connect-links">
-        <button className="btn btn--connect">
+        <a
+          href="https://www.linkedin.com/in/liuladniak/"
+          className="btn btn--connect"
+        >
           <img
             className="btn__icon"
             src={linkedIcon}
             alt="linkedin logo icon"
           />
           <span>LinkedIn</span>
-        </button>
-        <button className="btn btn--connect">
-          <img
-            className="btn__icon"
-            src={githubIcon}
-            alt="linkedin logo icon"
-          />
+        </a>
+        <a href="https://github.com/liuladniak" className="btn btn--connect">
+          <img className="btn__icon" src={githubIcon} alt="github logo icon" />
           <span>Github</span>
-        </button>
-        <button className="btn btn--connect">
-          <img className="btn__icon" src={emailIcon} alt="linkedin logo icon" />
+        </a>
+        <a href="mailto:liuladniak@gmail.com" className="btn btn--connect">
+          <img className="btn__icon" src={emailIcon} alt="Mail icon" />
           <span>Email</span>
-        </button>
-        <button className="btn btn--connect">
+        </a>
+        <a href="https://dribbble.com/" className="btn btn--connect">
           <img
             className="btn__icon"
             src={dribbleIcon}
             alt="linkedin logo icon"
           />
           <span>Dribble</span>
-        </button>
+        </a>
       </di>
     </>
   );
