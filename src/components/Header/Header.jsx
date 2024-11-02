@@ -16,38 +16,43 @@ const Header = () => {
     <header className="header">
       <nav className="nav">
         <ul className="nav-list">
-          <li
+          <Link
+            to="/"
             onClick={() => handleActiveLink("home")}
             className={`nav-list__item ${
               activeLink === "home" ? "nav-list__item--active" : ""
             }`}
           >
-            <Link to="/">Home</Link>
-          </li>
-          <li
+            Home
+          </Link>
+          <Link
+            to="/about"
             onClick={() => handleActiveLink("about")}
             className={`nav-list__item ${
               activeLink === "about" ? "nav-list__item--active" : ""
             }`}
           >
-            <Link to="/about">About</Link>
-          </li>
-          <li
+            About
+          </Link>
+
+          <Link
+            to="/projects"
             onClick={() => handleActiveLink("projects")}
             className={`nav-list__item ${
               activeLink === "projects" ? "nav-list__item--active" : ""
             }`}
           >
-            <Link to="/projects">Projects</Link>
-          </li>
-          <li
+            Projects
+          </Link>
+          <Link
+            to="/connect"
             onClick={() => handleActiveLink("connect")}
             className={`nav-list__item ${
               activeLink === "connect" ? "nav-list__item--active" : ""
             }`}
           >
-            <Link to="/connect">Connect</Link>
-          </li>
+            Connect
+          </Link>
           <li className="nav-list__item">
             <div className="dark-theme" onClick={toggleTheme}>
               <img src={darkTheme} alt="icon of a moon with stars" />

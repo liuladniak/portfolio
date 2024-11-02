@@ -4,6 +4,8 @@ import "./styles/partials/_globals.scss";
 import Homepage from "./pages/Homepage/Homepage";
 import AppLayout from "./components/AppLoayout/AppLayout";
 import ProjectsPage from "./pages/ProjectsPage/ProjectsPage";
+import ConnectPage from "./pages/ConnectPage/ConnectPage";
+import AboutPage from "./pages/AboutPage/AboutPage";
 
 const router = createBrowserRouter([
   {
@@ -20,11 +22,11 @@ const router = createBrowserRouter([
       },
       {
         path: "/about",
-        element: <Homepage />,
+        element: <AboutPage />,
       },
       {
         path: "/connect",
-        element: <Homepage />,
+        element: <ConnectPage />,
       },
     ],
   },

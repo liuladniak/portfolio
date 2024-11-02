@@ -22,6 +22,19 @@ const Projects = () => {
     },
     {
       id: 2,
+      pageRoute: "/citygo-dashboard",
+      img: project1Img,
+      video: videoProject1,
+      title: "CityGo Dashboard",
+      subtitle: "Admin management system",
+      description:
+        "Developed a SaaS-based analytics dashboard for Insightly, focusing on providing actionable insights through a user-centric design. The dashboard improved data accessibility and was adopted by 80% of users within the first three months.",
+      stack: ["React.js", "SASS", "Node.js", "PostgreSQL"],
+      github: "https://github.com/liuladniak/citygo",
+      live: "https://citygo-dashboard.liuladniak.io/",
+    },
+    {
+      id: 3,
       img: project3Img,
       title: "Sunset Pizza & Grill",
       subtitle: "Pizza Shop",
@@ -31,7 +44,7 @@ const Projects = () => {
       live: "https://sunset-pizza-shop.netlify.app/",
     },
     {
-      id: 3,
+      id: 4,
       img: project2Img,
       title: "Local Gardens",
       subtitle: "Decor Store",
