@@ -3,6 +3,7 @@ import Project from "../Project/Project";
 import project1Img from "../../assets/images/Homepage.png";
 import project2Img from "../../assets/images/Local Gardens Homepage.png";
 import project3Img from "../../assets/images/sunsetpizza.png";
+import project4Img from "../../assets/images/citygo-dashboard1.png";
 import videoProject1 from "../../assets/videos/video-project1.mov";
 
 const Projects = () => {
@@ -23,7 +24,7 @@ const Projects = () => {
     {
       id: 2,
       pageRoute: "/citygo-dashboard",
-      img: project1Img,
+      img: project4Img,
       video: videoProject1,
       title: "CityGo Dashboard",
       subtitle: "Admin management system",
