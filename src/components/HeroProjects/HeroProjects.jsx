@@ -9,10 +9,9 @@ const HeroProjects = () => {
       </div>
       <div className="hero__col">
         <p className="hero__desc hero__desc--projects">
-          Explore a selection of my work, showcasing how I approach design
-          challenges. Each project reflects my commitments to creating
-          user-centered experiences that blend functionality with aesthetic
-          appeal.
+          Discover my projects that highlight my technical expertise and
+          dedication to solving development challenges with effective,
+          user-focused solutions.
         </p>
       </div>
     </section>

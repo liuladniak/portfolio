@@ -14,17 +14,21 @@ const AboutPage = () => {
           <h2 className="about-card__heading">My Journey</h2>
 
           <p className="about-card__desc">
-            I began my career with a degree in Graphic Design from the
-            University of California, Berkeley, where I discovered my love for
-            user experience. Since then, I’ve worked with various startups and
-            established companies, helping them transform their digital presence
-            and improve user engagement.
+            I began my career with an engineering background, building a strong
+            foundation in problem-solving and analytical thinking. As I
+            transitioned into web development, I discovered a passion for
+            creating efficient, high-quality web applications. Over time, I've
+            worked on a wide range of projects—from front-end interfaces to
+            full-stack applications—where my strong debugging skills and
+            attention to detail have been invaluable in delivering reliable,
+            polished results.
           </p>
           <p className="about-card__desc">
-            Throughout my career, I’ve been driven by the belief that great
-            design is the result of a deep understanding of both the user and
-            the problem at hand. I specialize in taking complex ideas and
-            translating them into intuitive, easy-to-use interfaces.
+            Throughout my career, I’ve been driven by the belief that clean code
+            and thoughtful design are essential for a great user experience. My
+            approach is focused on transforming complex requirements into
+            seamless, intuitive interfaces that meet user needs and align with
+            business goals.
           </p>
         </div>
         <div className="about-card about-card--2">

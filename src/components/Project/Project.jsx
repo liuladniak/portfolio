@@ -11,12 +11,12 @@ const Project = ({ projectData }) => {
   return (
     <div className="project">
       <div className="project__col">
-        <div className="project__img">
+        <Link to="/projects" className="project__img">
           <img
             src={projectData.img}
             alt="Image of the landing page of the project"
           />
-        </div>
+        </Link>
         <ul className="project__stack">
           {projectData.stack.map((technology, i) => {
             return (
@@ -28,7 +28,7 @@ const Project = ({ projectData }) => {
         </ul>
       </div>
       <div className="project__desc">
-        <div className="project__desc-header">
+        <Link to="/projects" className="project__desc-header">
           <div className="project__header">
             <h2 className="project__heading">{projectData.title}</h2>
             <Link to="/projects" className="project__link">
@@ -40,7 +40,7 @@ const Project = ({ projectData }) => {
             </Link>
           </div>
           <p className="project__subheading">{projectData.subtitle}</p>
-        </div>
+        </Link>
         <div className="project__icons">
           <Link to={projectData.github} target="_blank">
             <img src={iconGithub} className="project__icon" />
@@ -51,7 +51,7 @@ const Project = ({ projectData }) => {
             <span className="__icon-alt">View live</span>
           </Link>
         </div>
-        <p>{projectData.description}</p>
+        <Link to="/projects">{projectData.description}</Link>
       </div>
     </div>
   );

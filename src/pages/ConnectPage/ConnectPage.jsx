@@ -22,14 +22,7 @@ const ConnectPage = () => {
           />
           <span>LinkedIn</span>
         </a>
-        <a
-          target="_blank"
-          href="https://github.com/liuladniak"
-          className="btn btn--connect"
-        >
-          <img className="btn__icon" src={githubIcon} alt="github logo icon" />
-          <span>Github</span>
-        </a>
+
         <a
           target="_blank"
           href="mailto:liuladniak@gmail.com"
@@ -37,6 +30,14 @@ const ConnectPage = () => {
         >
           <img className="btn__icon" src={emailIcon} alt="Mail icon" />
           <span>Email</span>
+        </a>
+        <a
+          target="_blank"
+          href="https://github.com/liuladniak"
+          className="btn btn--connect"
+        >
+          <img className="btn__icon" src={githubIcon} alt="github logo icon" />
+          <span>Github</span>
         </a>
         <a
           target="_blank"

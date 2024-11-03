@@ -44,9 +44,9 @@
       height: 1.6rem;
       transition: transform 0.3s ease;
     }
-    &:hover img {
-      transform: rotate(-45deg);
-    }
+    // &:hover img {
+    //   transform: rotate(-45deg);
+    // }
   }
   &__col {
     flex: 0.564;
@@ -93,6 +93,9 @@
     &-header {
       display: flex;
       flex-direction: column;
+      &:hover img {
+        transform: rotate(-45deg);
+      }
     }
   }
 }

@@ -10,9 +10,9 @@ const HeroAbout = () => {
       </div>
       <div className="hero__col">
         <p className="hero__desc hero__desc--about">
-          With 5+ years in design, I've worked on diverse projects, from mobile
-          apps to web platforms, focusing on user-centered designs that are both
-          visually appealing and practical.
+          With over 4 years of experience, I specialize in building
+          user-centered projects that emphasize both design and functionality,
+          leveraging my strong debugging skills.
         </p>
       </div>
     </section>
