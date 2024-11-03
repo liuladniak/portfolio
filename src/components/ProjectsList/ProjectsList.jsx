@@ -17,7 +17,7 @@ const Projects = () => {
       subtitle: "Travel booking app",
       description:
         "Developed a SaaS-based analytics dashboard for Insightly, focusing on providing actionable insights through a user-centric design. The dashboard improved data accessibility and was adopted by 80% of users within the first three months.",
-      stack: ["React.js", "SASS", "Node.js", "PostgreSQL"],
+      stack: ["React.js", "SASS", "Node.js", "PostgreSQL", "Redux"],
       github: "https://github.com/liuladniak/citygo",
       live: "https://citygo.liuladniak.io/",
     },
@@ -30,7 +30,7 @@ const Projects = () => {
       subtitle: "Admin management system",
       description:
         "Developed a SaaS-based analytics dashboard for Insightly, focusing on providing actionable insights through a user-centric design. The dashboard improved data accessibility and was adopted by 80% of users within the first three months.",
-      stack: ["React.js", "SASS", "Node.js", "PostgreSQL"],
+      stack: ["React.js", "Typescript", "SASS", "Node.js", "PostgreSQL"],
       github: "https://github.com/liuladniak/citygo",
       live: "https://citygo-dashboard.liuladniak.io/",
     },
@@ -50,7 +50,7 @@ const Projects = () => {
       title: "Local Gardens",
       subtitle: "Decor Store",
       description: "Project description",
-      stack: ["React.js", "Node.js"],
+      stack: ["React.js", "SASS"],
       github: "https://github.com/liuladniak/local-gardens",
       live: "https://local-gardens.netlify.app/",
     },

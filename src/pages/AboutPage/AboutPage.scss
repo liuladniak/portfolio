@@ -9,9 +9,9 @@
     overflow-x: hidden;
     grid-template-areas:
       "text-journey main-img"
-      "sec-img main-img"
-      "third-img text-experience"
-      "third-img forth-img";
+      "sec-img main-img";
+    // "third-img text-experience"
+    // "third-img forth-img";
     gap: 2.4rem;
   }
 

@@ -33,7 +33,7 @@ const AboutPage = () => {
         <div className="about-card about-card--3">
           <img src={aboutImg2} alt="image" />
         </div>
-        <div className="about-card about-card--4">
+        {/* <div className="about-card about-card--4">
           <img src={aboutImg3} alt="image" />
         </div>
         <div className="about-card about-card--5">
@@ -49,7 +49,7 @@ const AboutPage = () => {
         </div>
         <div className="about-card about-card--6">
           <img src={aboutImg4} alt="image" />
-        </div>
+        </div> */}
       </div>
     </>
   );

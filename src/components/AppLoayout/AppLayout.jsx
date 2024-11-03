@@ -3,6 +3,7 @@ import Header from "../Header/Header";
 import { useContext, useEffect } from "react";
 import { ThemeContext } from "../../contexts/ThemeContext";
 import { Outlet, useLocation } from "react-router-dom";
+import ScrollToTop from "../ScrollToTop/ScrollToTop";
 
 const AppLayout = () => {
   const { theme } = useContext(ThemeContext);
@@ -20,6 +21,7 @@ const AppLayout = () => {
 
   return (
     <div className={`app ${theme}`}>
+      <ScrollToTop />
       <Header />
       <main className="main">
         <Outlet />

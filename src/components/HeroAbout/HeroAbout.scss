@@ -1,5 +1,8 @@
 @use "../../styles/partials/variables" as *;
 
-.hero__desc--about {
-  color: $main--1;
+.hero__desc {
+  line-height: 100%;
+  &--about {
+    color: $main--1;
+  }
 }

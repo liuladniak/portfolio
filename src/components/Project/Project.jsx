@@ -31,18 +31,22 @@ const Project = ({ projectData }) => {
         <div className="project__desc-header">
           <div className="project__header">
             <h2 className="project__heading">{projectData.title}</h2>
-            <div className="project__link">
-              <img src={arrowIcon} alt="Arrow right icon" />
-            </div>
+            <Link to="/projects" className="project__link">
+              <img
+                className="project__link-icon"
+                src={arrowIcon}
+                alt="Arrow right icon"
+              />
+            </Link>
           </div>
           <p className="project__subheading">{projectData.subtitle}</p>
         </div>
         <div className="project__icons">
-          <Link to={projectData.github}>
+          <Link to={projectData.github} target="_blank">
             <img src={iconGithub} className="project__icon" />
             <span className="project__icon-alt">Github repo</span>
           </Link>
-          <Link to={projectData.live}>
+          <Link to={projectData.live} target="_blank">
             <img src={iconLaptop} className="project__icon" />
             <span className="__icon-alt">View live</span>
           </Link>

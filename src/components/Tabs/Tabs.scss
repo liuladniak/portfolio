@@ -26,7 +26,13 @@
     gap: 1.35rem;
     align-items: center;
     justify-content: center;
+    transition: all 0.5s ease-out;
 
+    &:not(.tab-label--active):hover {
+      // background-color: #e2e8f0;
+      background-color: $accent--1;
+      color: $main--1;
+    }
     &--active {
       background-color: $main--1;
       color: $main--4;

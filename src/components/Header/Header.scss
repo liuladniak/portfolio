@@ -30,9 +30,7 @@
 }
 
 .nav {
-  // background-color: $main--4;
   padding: 0.8rem;
-  // border-radius: 6.7rem;
   width: 100%;
 
   &-list {
@@ -45,28 +43,38 @@
     width: 100%;
 
     &__item {
-      padding: 1.6rem;
+      position: relative;
       flex: 1;
       display: flex;
       justify-content: center;
       align-items: center;
       line-height: 100%;
+      transition: all 0.5s ease-out;
     }
 
-    &__item--active {
-      color: $main--4;
+    &__link {
+      display: flex;
+      padding: 1.6rem;
+      color: #000;
       position: relative;
+      height: 100%;
       z-index: 1;
-      &::after {
-        background-color: $main--1;
+      position: relative;
+      border-radius: 20rem;
+
+      flex: 1;
+      justify-content: center;
+      align-items: center;
+      line-height: 100%;
+      transition: all 0.5s ease-out;
+
+      &:hover {
+        background-color: #e2e8f0;
         border-radius: 20rem;
-        content: "";
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: -1;
+      }
+
+      &--active {
+        color: $main--4;
       }
     }
   }
@@ -74,4 +82,16 @@
 .dark-theme {
   height: 2.4rem;
   width: 2.4rem;
+}
+
+.active-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: $main--1;
+  border-radius: 20rem;
+  z-index: -1;
+  transition: background-color 0.3s ease;
 }
