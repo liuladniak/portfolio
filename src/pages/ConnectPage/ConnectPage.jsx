@@ -41,7 +41,7 @@ const ConnectPage = () => {
         </a>
         <a
           target="_blank"
-          href="https://dribbble.com/"
+          href="https://dribbble.com/liuladniak"
           className="btn btn--connect"
         >
           <img

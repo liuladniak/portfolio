@@ -1,6 +1,5 @@
 import "../CitygoContent/CitygoContent.scss";
-import dashboardImg from "../../assets/images/citygoImg.png";
-import dashboardImg2 from "../../assets/images/citygoImg2.png";
+import dashboardImg from "../../assets/images/dashboardImg.png";
 
 const DashboardContent = () => {
   return (
