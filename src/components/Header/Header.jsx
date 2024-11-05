@@ -207,11 +207,11 @@ const Header = () => {
             ))}
           </AnimatePresence>
 
-          <li className="nav-list__item">
+          {/* <li className="nav-list__item">
             <div className="dark-theme" onClick={toggleTheme}>
               <img src={darkTheme} alt="icon of a moon with stars" />
             </div>
-          </li>
+          </li> */}
         </ul>
       </nav>
     </header>

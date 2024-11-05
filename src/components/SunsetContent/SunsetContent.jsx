@@ -1,6 +1,5 @@
 import "./SunsetContent.scss";
-import sunsetImg from "../../assets/images/citygoImg.png";
-import sunsetImg2 from "../../assets/images/citygoImg2.png";
+import sunsetImg from "../../assets/images/PizzaShop.png";
 
 const SunsetContent = () => {
   return (
@@ -28,7 +27,7 @@ const SunsetContent = () => {
         </div>
       </div>
       <div className="tab-content__section">
-        <h2 className="tab-content__heading">Challenges</h2>
+        <h2 className="tab-content__heading">Outcome</h2>
         <p className="tab-content__desc">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam,
           velit ullam repellendus blanditiis corporis suscipit odio vitae
@@ -36,7 +35,7 @@ const SunsetContent = () => {
           voluptatem animi qui illo accusamus?
         </p>
       </div>
-      <div className="tab-content__section">
+      {/* <div className="tab-content__section">
         <h2 className="tab-content__heading">Outcome</h2>
         <p className="tab-content__desc">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo aut
@@ -48,7 +47,7 @@ const SunsetContent = () => {
           src={sunsetImg2}
           alt="Image of the app"
         />
-      </div>
+      </div> */}
     </section>
   );
 };

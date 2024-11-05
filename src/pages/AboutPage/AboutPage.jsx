@@ -18,8 +18,8 @@ const AboutPage = () => {
             foundation in problem-solving and analytical thinking. As I
             transitioned into web development, I discovered a passion for
             creating efficient, high-quality web applications. Over time, I've
-            worked on a wide range of projects—from front-end interfaces to
-            full-stack applications—where my strong debugging skills and
+            worked on a wide range of projects - from front-end interfaces to
+            full-stack applications - where my strong debugging skills and
             attention to detail have been invaluable in delivering reliable,
             polished results.
           </p>

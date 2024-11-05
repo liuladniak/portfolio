@@ -1,3 +1,6 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+
 .tab-content {
   display: flex;
   flex-direction: column;
@@ -13,6 +16,11 @@
     }
   }
 
+  &__subheading {
+    font-family: "Nunito";
+    font-size: 2.4rem;
+    font-weight: 600;
+  }
   &__section {
     display: flex;
     flex-direction: column;
@@ -21,15 +29,72 @@
     border-radius: 1.6rem;
     padding: 3.2rem;
   }
+
+  &__features {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2.4rem;
+
+    &-list {
+      flex: 1;
+      font-size: 1.4rem;
+
+      display: grid; /* Enable grid layout */
+      grid-template-columns: repeat(2, 1fr); /* Two equal columns */
+      gap: 2rem;
+    }
+
+    &-item {
+      display: flex;
+      gap: 0.8rem;
+      flex-wrap: wrap;
+
+      @include tablet {
+        flex-wrap: nowrap;
+      }
+    }
+
+    &-name {
+      font-weight: 500;
+      flex: 0 0 auto;
+      min-width: 15rem;
+      max-width: 30%;
+    }
+  }
+  &__img {
+    border: 1px solid $main--2;
+    border-radius: 2rem;
+    overflow: hidden;
+  }
   &__overview {
     display: flex;
     flex-direction: column;
     gap: 1.6rem;
   }
-  &__icon {
-    font-size: 6.4rem;
-    line-height: 6.4rem;
+  &__icons {
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+    align-items: center;
   }
+  &__icon {
+    width: 4.2rem;
+    height: 4.2rem;
+    display: block;
+    margin: 1.6rem;
+
+    &--check {
+      width: 2.4rem;
+      height: 2.4rem;
+    }
+
+    &--next {
+      width: 2.4rem;
+      height: 2.4rem;
+    }
+  }
+
   &__desc {
     font-size: 2rem;
     line-height: 3.2rem;
@@ -50,6 +115,14 @@
     border-radius: 8rem;
   }
 
-  &__img {
+  &__outcome {
+    width: 100%;
+    overflow: hidden;
+    object-position: top;
+    position: relative;
+
+    & img {
+      height: unset;
+    }
   }
 }

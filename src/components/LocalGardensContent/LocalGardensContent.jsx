@@ -1,6 +1,5 @@
 import "./LocalGardensContent.scss";
-import lgImg from "../../assets/images/citygoImg.png";
-import lgImg2 from "../../assets/images/citygoImg2.png";
+import lgImg from "../../assets/images/Local Gardens Homepage.png";
 
 const LocalGardensContent = () => {
   return (
@@ -17,18 +16,18 @@ const LocalGardensContent = () => {
             cumque. Temporibus quis quisquam dolore quam deleniti ullam, labore
             officia a illum consequatur.
           </p>
-          <ul className="tab-content__tags">
-            <li className="tab-content__tag">Mobile</li>
+          {/* <ul className="tab-content__tags">
+            <li className="tab-content__tag">Booking</li>
             <li className="tab-content__tag">Application</li>
             <li className="tab-content__tag">E-Commerce</li>
-          </ul>
+          </ul> */}
         </div>
         <div className="tab-content__img">
           <img src={lgImg} alt="Image of the app" />
         </div>
       </div>
       <div className="tab-content__section">
-        <h2 className="tab-content__heading">Challenges</h2>
+        <h2 className="tab-content__heading">Outcome</h2>
         <p className="tab-content__desc">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam,
           velit ullam repellendus blanditiis corporis suscipit odio vitae
@@ -36,7 +35,7 @@ const LocalGardensContent = () => {
           voluptatem animi qui illo accusamus?
         </p>
       </div>
-      <div className="tab-content__section">
+      {/* <div className="tab-content__section">
         <h2 className="tab-content__heading">Outcome</h2>
         <p className="tab-content__desc">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo aut
@@ -44,7 +43,7 @@ const LocalGardensContent = () => {
           eius quam. Placeat facere amet et sapiente alias velit fugiat itaque!
         </p>
         <img className="tab-content__img" src={lgImg2} alt="Image of the app" />
-      </div>
+      </div> */}
     </section>
   );
 };

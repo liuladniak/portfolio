@@ -28,7 +28,7 @@ const DashboardContent = () => {
         </div>
       </div>
       <div className="tab-content__section">
-        <h2 className="tab-content__heading">Challenges</h2>
+        <h2 className="tab-content__heading">Outcome</h2>
         <p className="tab-content__desc">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam,
           velit ullam repellendus blanditiis corporis suscipit odio vitae
@@ -36,7 +36,7 @@ const DashboardContent = () => {
           voluptatem animi qui illo accusamus?
         </p>
       </div>
-      <div className="tab-content__section">
+      {/* <div className="tab-content__section">
         <h2 className="tab-content__heading">Outcome</h2>
         <p className="tab-content__desc">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo aut
@@ -48,7 +48,7 @@ const DashboardContent = () => {
           src={dashboardImg2}
           alt="Image of the app"
         />
-      </div>
+      </div> */}
     </section>
   );
 };
