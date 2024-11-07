@@ -5,13 +5,11 @@
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(2, 1fr) auto;
+    grid-template-rows: auto;
     overflow-x: hidden;
     grid-template-areas:
       "text-journey main-img"
-      "sec-img main-img";
-    // "third-img text-experience"
-    // "third-img forth-img";
+      "links main-img";
     gap: 2.4rem;
   }
 
@@ -40,6 +38,7 @@
 
     & img {
       border-radius: 1rem;
+      height: auto !important;
     }
   }
 
@@ -50,22 +49,14 @@
   &-card--2 {
     grid-area: main-img;
     height: 84.5rem;
-    // padding: 0;
   }
   &-card--3 {
-    grid-area: sec-img;
-    height: 100%;
-    // padding: 0;
+    grid-area: links;
+    align-items: center;
+    justify-content: center;
   }
-  &-card--4 {
-    grid-area: third-img;
-    // padding: 0;
-  }
-  &-card--5 {
-    grid-area: text-experience;
-  }
-  &-card--6 {
-    grid-area: forth-img;
-    // padding: 0;
-  }
+}
+
+.btn--connect-about {
+  border: 1px solid $main--3;
 }

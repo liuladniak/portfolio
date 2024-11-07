@@ -1,9 +1,8 @@
 import HeroAbout from "../../components/HeroAbout/HeroAbout";
 import "./AboutPage.scss";
 import aboutImg1 from "../../assets/images/aboutImg1.jpg";
-import aboutImg2 from "../../assets/images/aboutImg2.png";
-import aboutImg3 from "../../assets/images/aboutImg3.png";
-import aboutImg4 from "../../assets/images/aboutImg4.png";
+
+import ConnectLinks from "../../components/ConnectLinks/ConnectLinks";
 
 const AboutPage = () => {
   return (
@@ -35,25 +34,8 @@ const AboutPage = () => {
           <img src={aboutImg1} alt="image" />
         </div>
         <div className="about-card about-card--3">
-          <img src={aboutImg2} alt="image" />
+          <ConnectLinks />
         </div>
-        {/* <div className="about-card about-card--4">
-          <img src={aboutImg3} alt="image" />
-        </div>
-        <div className="about-card about-card--5">
-          <h2>Experience</h2>
-          <p>
-            Over the years, I’ve collaborated with clients like ShopEase,
-            FinTrack, and Insightly, working on everything from e-commerce
-            platforms to SaaS dashboards. My approach combines creativity with a
-            strong foundation in design principles and user research, ensuring
-            that every project I undertake not only meets but exceeds
-            expectations.
-          </p>
-        </div>
-        <div className="about-card about-card--6">
-          <img src={aboutImg4} alt="image" />
-        </div> */}
       </div>
     </>
   );

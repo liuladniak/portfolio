@@ -19,6 +19,8 @@ const About = () => {
             management, and communication. Conducting code reviews and providing
             constructive feedback allowed me to gain hands-on experience with
             Agile practices while helping others achieve their technical goals.
+            Through collaborative teamwork, I've learned to adapt and contribute
+            effectively, ensuring successful project outcomes.
           </p>
         </div>
       </div>

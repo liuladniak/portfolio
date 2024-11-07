@@ -1,13 +1,14 @@
 import HeroConnect from "../../components/HeroConnect/HeroConnect";
 import "./ConnectPage.scss";
-import linkedIcon from "../../assets/icons/linkedIcon.svg";
-import emailIcon from "../../assets/icons/emailIcon.svg";
+
+import ConnectLinks from "../../components/ConnectLinks/ConnectLinks";
 
 const ConnectPage = () => {
   return (
-    <>
+    <section className="connect">
       <HeroConnect />
-      <div className="connect-links">
+      <ConnectLinks />
+      {/* <div className="connect-links">
         <a
           target="_blank"
           href="https://www.linkedin.com/in/liuladniak/"
@@ -29,8 +30,8 @@ const ConnectPage = () => {
           <img className="btn__icon" src={emailIcon} alt="Mail icon" />
           <span>Email</span>
         </a>
-      </div>
-    </>
+      </div> */}
+    </section>
   );
 };
 
