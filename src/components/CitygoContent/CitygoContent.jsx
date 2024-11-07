@@ -4,6 +4,7 @@ import clockIcon from "../../assets/icons/flag.svg";
 import iconGithub from "../../assets/icons/github.svg";
 import iconLaptop from "../../assets/icons/laptop.svg";
 import citygoVideo from "../../assets/videos/video-project1.mp4";
+
 const featuresCompleted = [
   {
     name: "User Authentication",

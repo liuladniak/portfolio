@@ -42,14 +42,18 @@ const Project = ({ projectData }) => {
           <p className="project__subheading">{projectData.subtitle}</p>
         </Link>
         <div className="project__icons">
-          <Link to={projectData.github} target="_blank">
-            <img src={iconGithub} className="project__icon" />
-            <span className="project__icon-alt">Github repo</span>
-          </Link>
-          <Link to={projectData.live} target="_blank">
-            <img src={iconLaptop} className="project__icon" />
-            <span className="__icon-alt">View live</span>
-          </Link>
+          {projectData.github && (
+            <Link to={projectData.github} target="_blank">
+              <img src={iconGithub} className="project__icon" />
+              <span className="project__icon-alt">Github repo</span>
+            </Link>
+          )}
+          {projectData.live && (
+            <Link to={projectData.live} target="_blank">
+              <img src={iconLaptop} className="project__icon" />
+              <span className="__icon-alt">View live</span>
+            </Link>
+          )}
         </div>
         <Link to="/projects">{projectData.description}</Link>
       </div>

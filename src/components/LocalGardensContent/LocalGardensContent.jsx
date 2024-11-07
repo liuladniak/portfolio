@@ -9,18 +9,15 @@ const LocalGardensContent = () => {
           Local Gardens Antique store
         </h1>
         <div className="tab-content__overview">
-          <span className="tab-content__icon">🏛</span>
           <p className="tab-content__desc">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam,
-            officiis blanditiis quibusdam impedit dolor ad aliquam fugiat
-            cumque. Temporibus quis quisquam dolore quam deleniti ullam, labore
-            officia a illum consequatur.
+            Local Gardens is a home decor store app that offers a seamless
+            shopping experience. The app showcases a variety of decor products
+            and provides users with a clean, intuitive interface for browsing
+            and selecting items. It's fully responsive, ensuring smooth
+            navigation across devices, and integrates features like product
+            filters, detailed descriptions, and a visually appealing design to
+            enhance the shopping experience.
           </p>
-          {/* <ul className="tab-content__tags">
-            <li className="tab-content__tag">Booking</li>
-            <li className="tab-content__tag">Application</li>
-            <li className="tab-content__tag">E-Commerce</li>
-          </ul> */}
         </div>
         <div className="tab-content__img">
           <img src={lgImg} alt="Image of the app" />
@@ -29,21 +26,13 @@ const LocalGardensContent = () => {
       <div className="tab-content__section">
         <h2 className="tab-content__heading">Outcome</h2>
         <p className="tab-content__desc">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam,
-          velit ullam repellendus blanditiis corporis suscipit odio vitae
-          inventore harum, dolore, corrupti iusto ducimus saepe tenetur
-          voluptatem animi qui illo accusamus?
+          The Local Gardens is a work in progress, with continuous development
+          underway. My focus is on enhancing its functionality and user
+          experience. You can track updates and improvements on the project’s
+          GitHub, and expect new features to gradually appear on the live page
+          as they are implemented.
         </p>
       </div>
-      {/* <div className="tab-content__section">
-        <h2 className="tab-content__heading">Outcome</h2>
-        <p className="tab-content__desc">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo aut
-          repellendus minima tempore modi quas distinctio, rem vel perferendis
-          eius quam. Placeat facere amet et sapiente alias velit fugiat itaque!
-        </p>
-        <img className="tab-content__img" src={lgImg2} alt="Image of the app" />
-      </div> */}
     </section>
   );
 };

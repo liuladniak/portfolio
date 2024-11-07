@@ -9,18 +9,16 @@ const SunsetContent = () => {
           Sunset Pizza & Grill Shop
         </h1>
         <div className="tab-content__overview">
-          <span className="tab-content__icon">🏛</span>
           <p className="tab-content__desc">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam,
-            officiis blanditiis quibusdam impedit dolor ad aliquam fugiat
-            cumque. Temporibus quis quisquam dolore quam deleniti ullam, labore
-            officia a illum consequatur.
+            Sunset Pizza Shop is a user-friendly app that presents the menu and
+            details of a pizza shop in an engaging way. The app allows customers
+            to easily browse through the menu, view pizza options, and explore
+            different categories. It’s fully responsive, ensuring smooth
+            navigation across devices, and features an interactive map
+            integration to help users locate the shop with ease. While it
+            doesn't yet include online ordering, the app offers a simple,
+            accessible way to learn about the shop and its offerings.
           </p>
-          <ul className="tab-content__tags">
-            <li className="tab-content__tag">Mobile</li>
-            <li className="tab-content__tag">Application</li>
-            <li className="tab-content__tag">E-Commerce</li>
-          </ul>
         </div>
         <div className="tab-content__img">
           <img src={sunsetImg} alt="Image of the app" />
@@ -29,25 +27,13 @@ const SunsetContent = () => {
       <div className="tab-content__section">
         <h2 className="tab-content__heading">Outcome</h2>
         <p className="tab-content__desc">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam,
-          velit ullam repellendus blanditiis corporis suscipit odio vitae
-          inventore harum, dolore, corrupti iusto ducimus saepe tenetur
-          voluptatem animi qui illo accusamus?
+          The Sunset Pizza is a work in progress, with continuous development
+          underway. My focus is on enhancing its functionality and user
+          experience. You can track updates and improvements on the project’s
+          GitHub, and expect new features to gradually appear on the live page
+          as they are implemented.
         </p>
       </div>
-      {/* <div className="tab-content__section">
-        <h2 className="tab-content__heading">Outcome</h2>
-        <p className="tab-content__desc">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo aut
-          repellendus minima tempore modi quas distinctio, rem vel perferendis
-          eius quam. Placeat facere amet et sapiente alias velit fugiat itaque!
-        </p>
-        <img
-          className="tab-content__img"
-          src={sunsetImg2}
-          alt="Image of the app"
-        />
-      </div> */}
     </section>
   );
 };

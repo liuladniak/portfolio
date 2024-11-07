@@ -9,18 +9,15 @@ const DashboardContent = () => {
           Dashboard for CityGo Travel Booking app
         </h1>
         <div className="tab-content__overview">
-          <span className="tab-content__icon">🏛</span>
           <p className="tab-content__desc">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam,
-            officiis blanditiis quibusdam impedit dolor ad aliquam fugiat
-            cumque. Temporibus quis quisquam dolore quam deleniti ullam, labore
-            officia a illum consequatur.
+            The CityGo Dashboard is an admin interface for managing tours,
+            bookings, and user data for the CityGo Travel Booking app. Built
+            with React and integrated with PostgreSQL, it allows administrators
+            to easily view, add, and edit tour details, track booking
+            information, and manage user accounts. It also includes
+            authentication to ensure secure access and CRUD functionality for
+            managing the app’s data efficiently.
           </p>
-          <ul className="tab-content__tags">
-            <li className="tab-content__tag">Mobile</li>
-            <li className="tab-content__tag">Application</li>
-            <li className="tab-content__tag">E-Commerce</li>
-          </ul>
         </div>
         <div className="tab-content__img">
           <img src={dashboardImg} alt="Image of the app" />
@@ -29,25 +26,13 @@ const DashboardContent = () => {
       <div className="tab-content__section">
         <h2 className="tab-content__heading">Outcome</h2>
         <p className="tab-content__desc">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam,
-          velit ullam repellendus blanditiis corporis suscipit odio vitae
-          inventore harum, dolore, corrupti iusto ducimus saepe tenetur
-          voluptatem animi qui illo accusamus?
+          The CityGo Dashboard is a work in progress, with continuous
+          development underway. My focus is on enhancing its functionality and
+          user experience. You can track updates and improvements on the
+          project’s GitHub, and expect new features to gradually appear on the
+          live page as they are implemented.
         </p>
       </div>
-      {/* <div className="tab-content__section">
-        <h2 className="tab-content__heading">Outcome</h2>
-        <p className="tab-content__desc">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo aut
-          repellendus minima tempore modi quas distinctio, rem vel perferendis
-          eius quam. Placeat facere amet et sapiente alias velit fugiat itaque!
-        </p>
-        <img
-          className="tab-content__img"
-          src={dashboardImg2}
-          alt="Image of the app"
-        />
-      </div> */}
     </section>
   );
 };
