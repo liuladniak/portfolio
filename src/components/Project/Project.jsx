@@ -13,7 +13,6 @@ const Project = ({ projectData }) => {
   return (
     <motion.div
       ref={ref}
-      className="project"
       initial={{ opacity: 0, y: 20 }}
       animate={isInView ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 0.5, ease: "easeOut" }}
