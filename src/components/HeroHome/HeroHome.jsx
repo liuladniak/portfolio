@@ -14,7 +14,7 @@ const HeroHome = () => {
       </div>
       <div className="hero__col">
         <p className="hero__desc">
-          A <span className="bold">Software Engineer</span> based in 🇺🇸. With
+          A <span className="bold">Software Engineer</span> based in 🇺🇸 🇨🇦. With
           over
           <span className="bold"> 4 years of experience</span>, I specialize in
           creating clean, high quality solutions and user-friendly applications.
