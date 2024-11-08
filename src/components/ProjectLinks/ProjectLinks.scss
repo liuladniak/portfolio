@@ -1,0 +1,50 @@
+@use "../../styles/partials/variables" as *;
+
+.project {
+  &__icons {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    align-items: center;
+
+    &-link {
+      display: flex;
+      flex-direction: column;
+      gap: 0.8rem;
+      justify-content: center;
+      align-items: center;
+      padding: 1.6rem;
+      flex-grow: 0;
+      border-radius: 2rem;
+
+      &:hover {
+        background-color: $main--1;
+        transition: all 0.5s ease-out;
+        & .project__icon {
+          fill: $main--4;
+
+          &-alt {
+            color: $main--4;
+          }
+
+          &-laptop path {
+            fill: $main--4;
+          }
+        }
+      }
+    }
+  }
+
+  &__icon {
+    width: 6rem;
+    height: 6rem;
+    display: block;
+    fill: $accent--1;
+
+    &-alt {
+      font-weight: 500;
+      color: $accent--1;
+      line-height: 100%;
+    }
+  }
+}

@@ -1,5 +1,13 @@
 @use "../../styles/partials/variables" as *;
 
-.hero__desc--connect {
+.hero__desc--connect,
+.hero__heading--connect {
   color: $main--1;
+}
+
+.liu-icon--connect {
+  position: absolute;
+  scale: 70%;
+  left: 140px;
+  bottom: -15.8rem;
 }

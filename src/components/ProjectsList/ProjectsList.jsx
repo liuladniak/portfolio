@@ -1,6 +1,6 @@
 import "./ProjectsList.scss";
 import Project from "../Project/Project";
-import project1Img from "../../assets/images/Homepage.png";
+import project1Img from "../../assets/images/citygo-homepage.png";
 import project2Img from "../../assets/images/Local Gardens Homepage.png";
 import project3Img from "../../assets/images/sunsetpizza.png";
 import project4Img from "../../assets/images/dashboardImg.png";
@@ -10,6 +10,7 @@ const Projects = () => {
   const projectsData = [
     {
       id: 1,
+      slug: "citygo",
       pageRoute: "/city-go",
       img: project1Img,
       video: videoProject1,
@@ -23,6 +24,7 @@ const Projects = () => {
     },
     {
       id: 2,
+
       pageRoute: "/citygo-dashboard",
       img: project4Img,
       video: videoProject1,
@@ -36,6 +38,7 @@ const Projects = () => {
     },
     {
       id: 3,
+
       img: project3Img,
       title: "Sunset Pizza & Grill",
       subtitle: "Pizza Shop",
@@ -47,6 +50,7 @@ const Projects = () => {
     },
     {
       id: 4,
+
       img: project2Img,
       title: "Local Gardens",
       subtitle: "Decor Store",

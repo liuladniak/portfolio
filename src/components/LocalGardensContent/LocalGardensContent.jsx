@@ -1,5 +1,9 @@
 import "./LocalGardensContent.scss";
 import lgImg from "../../assets/images/Local Gardens Homepage.png";
+import ProjectLinks from "../ProjectLinks/ProjectLinks";
+const links = {
+  github: "https://github.com/liuladniak/local-gardens",
+};
 
 const LocalGardensContent = () => {
   return (
@@ -8,6 +12,7 @@ const LocalGardensContent = () => {
         <h1 className="tab-content__heading tab-content__heading--page">
           Local Gardens Antique store
         </h1>
+
         <div className="tab-content__overview">
           <p className="tab-content__desc">
             Local Gardens is a home decor store app that offers a seamless
@@ -32,6 +37,7 @@ const LocalGardensContent = () => {
           GitHub, and expect new features to gradually appear on the live page
           as they are implemented.
         </p>
+        <ProjectLinks className="tab-content__links" projectData={links} />
       </div>
     </section>
   );

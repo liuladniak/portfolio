@@ -6,11 +6,11 @@ import ProjectsList from "../../components/ProjectsList/ProjectsList";
 
 const Homepage = () => {
   return (
-    <>
+    <div className="homepage">
       <HeroHome />
       <About />
       <ProjectsList />
-    </>
+    </div>
   );
 };
 

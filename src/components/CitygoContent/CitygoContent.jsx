@@ -4,6 +4,7 @@ import clockIcon from "../../assets/icons/flag.svg";
 import iconGithub from "../../assets/icons/github.svg";
 import iconLaptop from "../../assets/icons/laptop.svg";
 import citygoVideo from "../../assets/videos/video-project1.mp4";
+import ProjectLinks from "../ProjectLinks/ProjectLinks";
 
 const featuresCompleted = [
   {
@@ -80,13 +81,19 @@ const featuresInProgress = [
   },
 ];
 
+const links = {
+  live: "https://citygo.liuladniak.io/",
+  github: "https://github.com/liuladniak/citygo",
+};
+
 const CitygoContent = () => {
   return (
-    <section className="tab-content">
+    <section id="citygo" className="tab-content">
       <div className="tab-content__section">
         <h1 className="tab-content__heading tab-content__heading--page">
           CityGo Travel Booking app
         </h1>
+
         <div className="tab-content__overview">
           <p className="tab-content__desc">
             The app addresses the common challenges travelers encounter when
@@ -132,16 +139,7 @@ const CitygoContent = () => {
           to see the features in action, and feel free to visit the GitHub
           repository for collaboration or to share your feedback.
         </p>
-        <div className="tab-content__icons">
-          <a href="https://citygo.liuladniak.io/" target="_blank">
-            <img src={iconGithub} className="tab-content__icon" />
-            <span className="tab-content__icon-alt">Github repo</span>
-          </a>
-          <a href="https://github.com/liuladniak/citygo" target="_blank">
-            <img src={iconLaptop} className="tab-content__icon" />
-            <span className="__icon-alt">View live</span>
-          </a>
-        </div>
+        <ProjectLinks className="tab-content__links" projectData={links} />
       </div>
       <div className="tab-content__section">
         <h2 className="tab-content__heading">Next steps</h2>

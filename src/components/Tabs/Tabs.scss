@@ -12,6 +12,7 @@
     display: flex;
     gap: 2.4rem;
     list-style-type: none;
+    color: $main--4;
   }
   &-label {
     flex: 1;
@@ -21,21 +22,22 @@
     font-size: 2.4rem;
     font-weight: bold;
     font-family: "Nunito";
-    background-color: $main--4;
+    background-color: $main--2;
     display: flex;
     gap: 1.35rem;
     align-items: center;
     justify-content: center;
     transition: all 0.5s ease-out;
+    // border: 2px solid transparent;
 
     &:not(.tab-label--active):hover {
-      // background-color: #e2e8f0;
-      background-color: $accent--1;
+      background-color: $accent--2;
       color: $main--1;
     }
     &--active {
-      background-color: $main--1;
-      color: $main--4;
+      background-color: $main--4;
+      color: $main--1;
+      // border: 2px solid $main--3;
     }
   }
   &__icon {

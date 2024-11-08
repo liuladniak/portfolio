@@ -2,7 +2,14 @@
 
 .hero__desc {
   line-height: 100%;
-  &--about {
-    color: $main--1;
-  }
+}
+.hero__heading--about,
+.hero__desc--about {
+  color: $main--1;
+}
+.liu-icon--about {
+  position: absolute;
+  scale: 80%;
+  left: 14rem;
+  bottom: -13.6rem;
 }

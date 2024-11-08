@@ -14,10 +14,10 @@
   padding: 1.6rem 2.4rem;
   border-radius: 1.6rem;
   border: none;
-  transition: all 0.5s ease-out;
+  transition: background-color 0.5s ease-out;
 
   &:hover {
-    background-color: $accent--1;
+    background-color: $accent--2;
     color: $main--1;
   }
 
@@ -33,4 +33,20 @@
   justify-content: center;
   align-items: center;
   gap: 2.4rem;
+
+  // &:hover {
+  //   .email-icon {
+  //     fill: $main--4;
+  //   }
+  //   .linkedin-icon {
+  //     stroke: $main--4;
+  //   }
+  // }
+}
+
+.email-icon {
+  fill: $main--1;
+}
+.linkedin-icon {
+  stroke: $main--1;
 }

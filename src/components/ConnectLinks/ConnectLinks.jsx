@@ -1,6 +1,8 @@
 import "./ConnectLinks.scss";
 import linkedIcon from "../../assets/icons/linkedIcon.svg";
 import emailIcon from "../../assets/icons/emailIcon.svg";
+import EmailIcon from "../Icons/EmailIcon";
+import LinkedInIcon from "../Icons/LinkedInIcon";
 
 const ConnectLinks = () => {
   return (
@@ -10,7 +12,8 @@ const ConnectLinks = () => {
         href="https://www.linkedin.com/in/liuladniak/"
         className="btn btn--connect btn--connect-about"
       >
-        <img className="btn__icon" src={linkedIcon} alt="linkedin logo icon" />
+        {/* <img className="btn__icon" src={linkedIcon} alt="linkedin logo icon" /> */}
+        <LinkedInIcon />
         <span>LinkedIn</span>
       </a>
 
@@ -19,7 +22,7 @@ const ConnectLinks = () => {
         href="mailto:liuladniak@gmail.com"
         className="btn btn--connect btn--connect-about"
       >
-        <img className="btn__icon" src={emailIcon} alt="Mail icon" />
+        <EmailIcon />
         <span>Email</span>
       </a>
     </div>

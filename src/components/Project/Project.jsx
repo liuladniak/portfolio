@@ -3,13 +3,16 @@ import { useRef } from "react";
 
 import "./Project.scss";
 import arrowIcon from "../../assets/icons/arrowIcon.svg";
-import iconGithub from "../../assets/icons/github.svg";
-import iconLaptop from "../../assets/icons/laptop.svg";
-import { Link } from "react-router-dom";
+
+import { Link, useNavigate } from "react-router-dom";
+import ProjectLinks from "../ProjectLinks/ProjectLinks";
 
 const Project = ({ projectData }) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
+
+  const navigate = useNavigate();
+
   return (
     <motion.div
       ref={ref}
@@ -39,30 +42,17 @@ const Project = ({ projectData }) => {
           <Link to="/projects" className="project__desc-header">
             <div className="project__header">
               <h2 className="project__heading">{projectData.title}</h2>
-              <Link to="/projects" className="project__link">
-                <img
-                  className="project__link-icon"
-                  src={arrowIcon}
-                  alt="Arrow right icon"
-                />
-              </Link>
+              <p className="project__subheading">{projectData.subtitle}</p>
             </div>
-            <p className="project__subheading">{projectData.subtitle}</p>
+            <div className="project__link">
+              <img
+                className="project__link-icon"
+                src={arrowIcon}
+                alt="Arrow right icon"
+              />
+            </div>
           </Link>
-          <div className="project__icons">
-            {projectData.github && (
-              <Link to={projectData.github} target="_blank">
-                <img src={iconGithub} className="project__icon" />
-                <span className="project__icon-alt">Github repo</span>
-              </Link>
-            )}
-            {projectData.live && (
-              <Link to={projectData.live} target="_blank">
-                <img src={iconLaptop} className="project__icon" />
-                <span className="__icon-alt">View live</span>
-              </Link>
-            )}
-          </div>
+          <ProjectLinks projectData={projectData} />
           <Link to="/projects">{projectData.description}</Link>
         </div>
       </div>

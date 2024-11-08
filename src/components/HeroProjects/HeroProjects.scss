@@ -1,5 +1,12 @@
 @use "../../styles/partials/variables" as *;
 
-.hero__desc--projects {
-  color: $main--1;
+.hero__desc--projects,
+.hero__heading--projects {
+  color: $main--3;
+}
+.liu-icon--projects {
+  position: absolute;
+  scale: 70%;
+  left: 140px;
+  bottom: -15.4rem;
 }

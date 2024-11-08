@@ -4,18 +4,19 @@ import { useContext, useEffect } from "react";
 import { ThemeContext } from "../../contexts/ThemeContext";
 import { Outlet, useLocation } from "react-router-dom";
 import ScrollToTop from "../ScrollToTop/ScrollToTop";
+import Footer from "../Footer/Footer";
 
 const AppLayout = () => {
   const { theme } = useContext(ThemeContext);
   const location = useLocation();
 
   useEffect(() => {
-    if (location.pathname === "/") {
-      document.body.style.backgroundColor = "#232946";
-      document.body.style.color = "#b8c1ec";
+    if (location.pathname === "/" || location.pathname === "/projects") {
+      document.body.style.backgroundColor = "#253237";
+      document.body.style.color = "#c2dfe3";
     } else {
-      document.body.style.backgroundColor = "#b8c1ec";
-      document.body.style.color = "#232946";
+      document.body.style.backgroundColor = "#c2dfe3";
+      document.body.style.color = "#253237";
     }
   }, [location.pathname]);
 
@@ -26,7 +27,7 @@ const AppLayout = () => {
       <main className="main">
         <Outlet />
       </main>
-      {/* <Footer/> */}
+      <Footer />
     </div>
   );
 };

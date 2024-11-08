@@ -4,8 +4,6 @@ import HeroProjects from "../../components/HeroProjects/HeroProjects";
 import LocalGardensContent from "../../components/LocalGardensContent/LocalGardensContent";
 import SunsetContent from "../../components/SunsetContent/SunsetContent";
 import Tabs from "../../components/Tabs/Tabs";
-import "./ProjectsPage.scss";
-
 const ProjectsPage = () => {
   const tabsData = [
     {

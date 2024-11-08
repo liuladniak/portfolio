@@ -1,5 +1,10 @@
 import "../CitygoContent/CitygoContent.scss";
 import dashboardImg from "../../assets/images/dashboardImg.png";
+import ProjectLinks from "../ProjectLinks/ProjectLinks";
+
+const links = {
+  github: "https://github.com/liuladniak/citygo",
+};
 
 const DashboardContent = () => {
   return (
@@ -8,6 +13,7 @@ const DashboardContent = () => {
         <h1 className="tab-content__heading tab-content__heading--page">
           Dashboard for CityGo Travel Booking app
         </h1>
+
         <div className="tab-content__overview">
           <p className="tab-content__desc">
             The CityGo Dashboard is an admin interface for managing tours,
@@ -32,6 +38,8 @@ const DashboardContent = () => {
           project’s GitHub, and expect new features to gradually appear on the
           live page as they are implemented.
         </p>
+
+        <ProjectLinks className="tab-content__links" projectData={links} />
       </div>
     </section>
   );
