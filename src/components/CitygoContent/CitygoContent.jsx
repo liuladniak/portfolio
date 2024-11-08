@@ -104,31 +104,30 @@ const CitygoContent = () => {
             ideal city tours, making their travel planning efficient and
             enjoyable.
           </p>
-
-          <div className="tab-content__features">
-            <h3 className="tab-content__subheading">Features implemented</h3>
-            <ul className="tab-content__features-list">
-              {featuresCompleted.map((feature, index) => (
-                <li className="tab-content__features-item" key={index}>
-                  <img
-                    className="tab-content__icon--check"
-                    src={checkIcon}
-                    alt="Check icon"
-                  />
-                  <span className="tab-content__features-name">
-                    {feature.name}:
-                  </span>
-                  <span className="tab-content__features-desc">
-                    {feature.description}
-                  </span>
-                </li>
-              ))}
-            </ul>
-          </div>
         </div>
-        <h2 className="tab-content__heading">Demo</h2>
+        {/* <h2 className="tab-content__heading">Demo</h2> */}
         <div className="tab-content__img">
           <video src={citygoVideo} autoPlay loop muted></video>
+        </div>
+        <div className="tab-content__features">
+          <h3 className="tab-content__subheading">Features implemented</h3>
+          <ul className="tab-content__features-list">
+            {featuresCompleted.map((feature, index) => (
+              <li className="tab-content__features-item" key={index}>
+                <img
+                  className="tab-content__icon--check"
+                  src={checkIcon}
+                  alt="Check icon"
+                />
+                <span className="tab-content__features-name">
+                  {feature.name}:
+                </span>
+                <span className="tab-content__features-desc">
+                  {feature.description}
+                </span>
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
 

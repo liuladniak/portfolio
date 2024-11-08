@@ -25,6 +25,7 @@ const DashboardContent = () => {
             managing the app’s data efficiently.
           </p>
         </div>
+        {/* <h2 className="tab-content__heading">Demo</h2> */}
         <div className="tab-content__img">
           <img src={dashboardImg} alt="Image of the app" />
         </div>
