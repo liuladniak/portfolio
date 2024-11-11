@@ -34,6 +34,12 @@
     flex: 1;
     border-radius: 1.6rem;
     overflow: hidden;
+
+    &--mobile {
+      width: 50%;
+      float: left;
+      margin-right: 1.6rem;
+    }
   }
 
   &__heading {
@@ -48,5 +54,23 @@
     display: flex;
     flex-direction: column;
     gap: 2.4rem;
+
+    &-part--hidden {
+      display: none;
+
+      @include tablet {
+        display: block;
+      }
+    }
   }
+}
+
+.btn--read-more {
+  background-color: transparent;
+  border: none;
+}
+.read-more__btn-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
