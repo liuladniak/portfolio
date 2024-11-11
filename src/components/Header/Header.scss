@@ -1,8 +1,9 @@
 @use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
 
 .header {
   margin: 2.4rem auto 3.6rem;
-  max-width: 70rem;
+  max-width: 40rem;
   width: 100%;
   color: $main--1;
   display: flex;
@@ -15,7 +16,6 @@
   background: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: backdrop-filter 0.3s ease;
 
@@ -25,6 +25,11 @@
     -webkit-backdrop-filter: none;
     border-bottom: none;
     box-shadow: none;
+  }
+
+  @include tablet {
+    max-width: 70rem;
+    display: flex;
   }
 }
 

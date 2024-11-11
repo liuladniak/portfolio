@@ -1,13 +1,19 @@
 @use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
 
 .about {
   display: flex;
+  flex-direction: column;
   gap: 2.4rem;
   width: 100%;
-  max-width: 112rem;
   height: 100%;
   color: $main--1;
   margin-bottom: 6rem;
+
+  @include tablet {
+    flex-direction: row;
+    max-width: 112rem;
+  }
 
   &__desc {
     flex: 2;
@@ -16,7 +22,12 @@
     padding: 3.2rem;
     display: flex;
     flex-direction: column;
-    line-height: 3.2rem;
+
+    line-height: 3rem;
+
+    @include tablet {
+      line-height: 3.2rem;
+    }
   }
 
   &__photo {

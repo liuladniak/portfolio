@@ -1,0 +1,129 @@
+[
+  {
+    "id": "citygo",
+    "label": "CityGo",
+    "icon": "🏛",
+    "title": "CityGo Travel Booking app",
+    "description": "The app addresses the common challenges travelers encounter when planning city tours, such as cumbersome booking processes and unclear navigation. By providing a streamlined user experience, the app ensures secure user management and simplifies the booking journey. With CityGo, travelers can easily discover and book their ideal city tours, making their travel planning efficient and enjoyable.",
+    "media": {
+      "type": "video",
+      "src": "../../public/video-project1.mp4"
+    },
+    "featuresCompleted": [
+      {
+        "name": "User Authentication",
+        "description": "JWT-based authentication for user access using Node.js and Express."
+      },
+      {
+        "name": "Shopping Cart Management",
+        "description": "Easily review and manage selected tours with Redux for state management."
+      },
+      {
+        "name": "Tour Filtering",
+        "description": "Filter tours by location, duration, and price using React Hooks for state handling."
+      },
+      {
+        "name": "Quick Tour Search",
+        "description": "Find specific tours with keyword search powered by Elasticsearch."
+      },
+      {
+        "name": "Booking Process",
+        "description": "Guided booking for dates and group sizes implemented with React Router."
+      },
+      {
+        "name": "Interactive Availability Calendar",
+        "description": "Visual calendar for selecting available dates using a custom React component."
+      },
+      {
+        "name": "Responsive Design",
+        "description": "User-friendly on mobile and desktop devices, developed with CSS Grid and Flexbox."
+      },
+      {
+        "name": "Database Integration",
+        "description": "Efficient storage and retrieval of user data using PostgreSQL with Knex.js."
+      },
+      {
+        "name": "Interactive Tour Map",
+        "description": "Visualize tour locations on an lightweight interactive map using Leaflet Maps API."
+      }
+    ],
+    "nextSteps": "As I continue to enhance the CityGo Travel Booking app, my focus is on implementing features that improve user experience. I appreciate your feedback as I work towards delivering a seamless booking process and expanded functionalities.",
+    "featuresInProgress": [
+      {
+        "name": "User Comments",
+        "description": "Allow users to leave feedback and reviews."
+      },
+      {
+        "name": "Currency Converter",
+        "description": "Convert prices to different currencies."
+      },
+      {
+        "name": "Google Authentication",
+        "description": "Sign in using Google accounts."
+      },
+      {
+        "name": "Stripe Checkout",
+        "description": "Secure payments through Stripe integration."
+      },
+      {
+        "name": "Enhanced Map Functionality",
+        "description": "Improved map features for better navigation."
+      },
+      {
+        "name": "AI-Powered Recommendations",
+        "description": "Personalized tour suggestions using AI."
+      }
+    ],
+    "links": {
+      "live": "https://citygo.liuladniak.io/",
+      "github": "https://github.com/liuladniak/citygo"
+    },
+    "outcome": "The CityGo app is live and ready for exploration! Check out the demo to see the features in action, and feel free to visit the GitHub repository for collaboration or to share your feedback."
+  },
+  {
+    "id": "dashboard",
+    "label": "Dashboard",
+    "icon": "📈",
+    "title": "Dashboard for CityGo Travel Booking app",
+    "description": "The CityGo Dashboard is an admin interface for managing tours, bookings, and user data for the CityGo Travel Booking app. Built with React and integrated with PostgreSQL, it allows administrators to easily view, add, and edit tour details, track booking information, and manage user accounts. It also includes authentication to ensure secure access and CRUD functionality for managing the app’s data efficiently.",
+    "media": {
+      "type": "image",
+      "src": "../../public/dashboardImg.png"
+    },
+    "links": {
+      "github": "https://github.com/liuladniak/citygo"
+    },
+    "outcome": "The CityGo Dashboard is a work in progress, with continuous development underway. My focus is on enhancing its functionality and user experience. You can track updates and improvements on the project’s GitHub, and expect new features to gradually appear on the live page as they are implemented."
+  },
+  {
+    "id": "localgardens",
+    "label": "Local Gardens",
+    "icon": "🏺",
+    "title": "Local Gardens Antique store",
+    "description": "Local Gardens is a home decor store app that offers a seamless shopping experience. The app showcases a variety of decor products and provides users with a clean, intuitive interface for browsing and selecting items. It's fully responsive, ensuring smooth navigation across devices, and integrates features like product filters, detailed descriptions, and a visually appealing design to enhance the shopping experience.",
+    "media": {
+      "type": "image",
+      "src": "../../public/Local Gardens Homepage.png"
+    },
+    "links": {
+      "github": "https://github.com/liuladniak/local-gardens"
+    },
+    "outcome": "The Local Gardens is a work in progress, with continuous development underway. My focus is on enhancing its functionality and user experience. You can track updates and improvements on the project’s GitHub, and expect new features to gradually appear on the live page as they are implemented."
+  },
+  {
+    "id": "sunset",
+    "label": "Sunset",
+    "icon": "🍕",
+    "title": "Sunset Pizza & Grill Shop",
+    "description": "Sunset Pizza Shop is an app I developed as part of a real-world freelance project for a local business. It provides a user-friendly engaging way. The app allows customers to easily browse through the menu, view pizza options, and explore different categories. It’s fully responsive, ensuring smooth navigation across devices, and features an interactive map integration to help users locate the shop with ease. While it doesn't yet include online ordering, the app offers a simple, accessible way to learn about the shop and its offerings.",
+    "media": {
+      "type": "image",
+      "src": "../../public/PizzaShop.png"
+    },
+    "links": {
+      "live": "https://sunset-pizza-shop.netlify.app/",
+      "github": "https://github.com/liuladniak/travel-booking-app--user"
+    },
+    "outcome": "Boosted sales by 30% and reduced service costs by 25% by creating a responsive, mobile-optimized website using HTML5, CSS3, improving user experience to increase local customer engagement."
+  }
+]

@@ -1,13 +1,11 @@
 import "./AppLayout.scss";
 import Header from "../Header/Header";
 import { useContext, useEffect } from "react";
-import { ThemeContext } from "../../contexts/ThemeContext";
 import { Outlet, useLocation } from "react-router-dom";
 import ScrollToTop from "../ScrollToTop/ScrollToTop";
 import Footer from "../Footer/Footer";
 
 const AppLayout = () => {
-  const { theme } = useContext(ThemeContext);
   const location = useLocation();
 
   useEffect(() => {
@@ -21,7 +19,7 @@ const AppLayout = () => {
   }, [location.pathname]);
 
   return (
-    <div className={`app ${theme}`}>
+    <div className={`app`}>
       <ScrollToTop />
       <Header />
       <main className="main">

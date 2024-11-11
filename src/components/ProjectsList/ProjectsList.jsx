@@ -4,7 +4,7 @@ import project1Img from "../../assets/images/citygo-homepage.png";
 import project2Img from "../../assets/images/Local Gardens Homepage.png";
 import project3Img from "../../assets/images/sunsetpizza.png";
 import project4Img from "../../assets/images/dashboardImg.png";
-import videoProject1 from "../../assets/videos/video-project1.mov";
+import videoProject1 from "../../assets/videos/video-project1.mp4";
 
 const Projects = () => {
   const projectsData = [
@@ -34,7 +34,6 @@ const Projects = () => {
         "An admin interface for managing CityGo’s tours, bookings, and users. Features include secure authentication, data visualization, and tools for efficient tour schedule and booking management.",
       stack: ["React.js", "Typescript", "SASS", "Node.js", "PostgreSQL"],
       github: "https://github.com/liuladniak/citygo",
-      // live: "https://citygo-dashboard.liuladniak.io/",
     },
     {
       id: 3,
@@ -57,8 +56,6 @@ const Projects = () => {
       description:
         "An e-commerce site for decor lovers, offering a wide range of products to enhance any space. Users can explore categories, view details, and make secure purchases, all with a clean, inspiring design focused on beautiful home transformations.",
       stack: ["React.js", "SASS"],
-      // github: "https://github.com/liuladniak/local-gardens",
-      // live: "https://local-gardens.netlify.app/",
     },
   ];
   return (
