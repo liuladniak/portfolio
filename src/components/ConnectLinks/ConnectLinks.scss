@@ -1,4 +1,5 @@
 @use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
 
 .connect-links {
   display: grid;
@@ -34,14 +35,13 @@
   align-items: center;
   gap: 2.4rem;
 
-  // &:hover {
-  //   .email-icon {
-  //     fill: $main--4;
-  //   }
-  //   .linkedin-icon {
-  //     stroke: $main--4;
-  //   }
-  // }
+  &-about span {
+    display: none;
+
+    @include tablet {
+      display: block;
+    }
+  }
 }
 
 .email-icon {

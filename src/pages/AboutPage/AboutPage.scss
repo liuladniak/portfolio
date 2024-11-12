@@ -1,28 +1,38 @@
 @use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+
+.about-page {
+  width: 100%;
+  gap: 2.4rem;
+  overflow-x: hidden;
+  display: flex;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    flex: 1;
+  }
+}
 
 .about {
-  &-layout {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    overflow-x: hidden;
-    grid-template-areas:
-      "text-journey main-img"
-      "links main-img";
-    gap: 2.4rem;
-  }
-
   &-card {
     background-color: $main--6;
     border-radius: 1.6rem;
     overflow: hidden;
-    padding: 3.2rem;
+    padding: 1.6rem;
     display: flex;
     flex-direction: column;
     gap: 2.4rem;
     color: $main--1;
 
+    @include tablet {
+      padding: 3.2rem;
+    }
+
+    &__wrp-1 {
+      flex: 1;
+    }
     &__heading {
       font-size: 3.6rem;
       font-weight: 600;
@@ -38,7 +48,19 @@
 
     & img {
       border-radius: 1rem;
-      height: auto !important;
+    }
+
+    &--mobile {
+      @include tablet {
+        display: none;
+      }
+    }
+
+    &--tablet {
+      display: none;
+      @include tablet {
+        display: block;
+      }
     }
   }
 
@@ -49,6 +71,7 @@
   &-card--2 {
     grid-area: main-img;
     height: 84.5rem;
+    flex: 1;
   }
   &-card--3 {
     grid-area: links;

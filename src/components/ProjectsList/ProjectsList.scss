@@ -1,13 +1,30 @@
 @use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
 
 .projects {
   max-width: 112rem;
   width: 100%;
   color: $main--1;
+
   &-list {
     display: flex;
     flex-direction: column;
-    gap: 6rem;
+    gap: 2.4rem;
+    @include tablet {
+      gap: 6rem;
+    }
+  }
+  &__heading {
+    margin-bottom: 2.4rem;
+
+    font-family: "Nunito";
+    font-weight: 600;
+    padding: 0 1.6rem;
+    color: $main--4;
+
+    @include tablet {
+      padding: 0 3.2rem;
+    }
   }
 }
 

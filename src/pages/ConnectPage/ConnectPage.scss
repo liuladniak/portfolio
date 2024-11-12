@@ -1,5 +1,17 @@
 @use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
 
 .connect {
-  margin-bottom: 8rem;
+  margin: 0 0.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+  @include tablet {
+    display: block;
+    margin: 0 0 8rem;
+  }
+}
+
+.liu-icon--connect-mobile {
+  display: none;
 }

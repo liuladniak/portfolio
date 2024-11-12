@@ -10,7 +10,6 @@ import ProjectLinks from "../ProjectLinks/ProjectLinks";
 const Project = ({ projectData }) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
-
   const navigate = useNavigate();
 
   return (
@@ -22,6 +21,7 @@ const Project = ({ projectData }) => {
     >
       <div className="project">
         <div className="project__col">
+          <ProjectHeader modifier={"mobile"} projectData={projectData} />
           <Link to="/projects" className="project__img">
             <img
               src={projectData.img}
@@ -39,21 +39,14 @@ const Project = ({ projectData }) => {
           </ul>
         </div>
         <div className="project__desc">
-          <Link to="/projects" className="project__desc-header">
-            <div className="project__header">
-              <h2 className="project__heading">{projectData.title}</h2>
-              <p className="project__subheading">{projectData.subtitle}</p>
-            </div>
-            <div className="project__link">
-              <img
-                className="project__link-icon"
-                src={arrowIcon}
-                alt="Arrow right icon"
-              />
-            </div>
+          <ProjectHeader modifier={"tablet"} projectData={projectData} />
+          <ProjectLinks
+            className="project-link--home"
+            projectData={projectData}
+          />
+          <Link className="project__desc-content" to="/projects">
+            {projectData.description}
           </Link>
-          <ProjectLinks projectData={projectData} />
-          <Link to="/projects">{projectData.description}</Link>
         </div>
       </div>
     </motion.div>
@@ -61,3 +54,24 @@ const Project = ({ projectData }) => {
 };
 
 export default Project;
+
+const ProjectHeader = ({ projectData, modifier }) => {
+  return (
+    <Link
+      to="/projects"
+      className={`project__desc-header project__desc-header--${modifier}`}
+    >
+      <div className="project__header">
+        <h2 className="project__heading">{projectData.title}</h2>
+        <p className="project__subheading">{projectData.subtitle}</p>
+      </div>
+      <div className="project__link">
+        <img
+          className="project__link-icon"
+          src={arrowIcon}
+          alt="Arrow right icon"
+        />
+      </div>
+    </Link>
+  );
+};

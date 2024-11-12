@@ -11,15 +11,20 @@
 .tab {
   &-labels {
     display: flex;
-    gap: 2.4rem;
+    gap: 1.6rem;
     list-style-type: none;
     color: $main--4;
     overflow-x: scroll;
 
     @include tablet {
+      gap: 2.4rem;
+    }
+
+    @include tablet-lg {
       overflow-x: unset;
     }
   }
+
   &-label {
     flex: 1;
     border-radius: 1.6rem;
@@ -54,6 +59,11 @@
     line-height: 3.2rem;
 
     @include tablet {
+      font-size: 4rem;
+      line-height: 4rem;
+    }
+
+    @include tablet-lg {
       font-size: 6rem;
       line-height: 6rem;
     }

@@ -12,7 +12,6 @@ const ConnectLinks = () => {
         href="https://www.linkedin.com/in/liuladniak/"
         className="btn btn--connect btn--connect-about"
       >
-        {/* <img className="btn__icon" src={linkedIcon} alt="linkedin logo icon" /> */}
         <LinkedInIcon />
         <span>LinkedIn</span>
       </a>

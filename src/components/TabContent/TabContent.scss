@@ -27,7 +27,11 @@
     gap: 2.4rem;
     background-color: #fffffe;
     border-radius: 1.6rem;
-    padding: 3.2rem;
+    padding: 1.6rem;
+
+    @include tablet {
+      padding: 3.2rem;
+    }
   }
 
   &__features {

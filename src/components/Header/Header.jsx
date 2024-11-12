@@ -2,9 +2,13 @@ import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import "./Header.scss";
 import { Link, useLocation } from "react-router-dom";
+import useResponsive from "../../hooks/useResponsive";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const isTabletOrDesktop = useResponsive(768);
+
   const location = useLocation();
 
   useEffect(() => {
@@ -26,17 +30,36 @@ const Header = () => {
     { path: "/connect", name: "Connect" },
   ];
 
+  const hamburgerClass = ["/", "/projects"].includes(location.pathname)
+    ? "hamburger--primary"
+    : "hamburger--secondary";
+
   const spring = {
     type: "spring",
     stiffness: 600,
     damping: 35,
   };
 
+  const toggleMenu = () => {
+    setIsMenuOpen((prev) => !prev);
+  };
+
   const MotionLink = motion(Link);
 
   return (
-    <header className={`header ${isScrolled ? "" : "solid-header"}`}>
-      <nav className="nav">
+    <header
+      className={`header ${isScrolled ? "" : "solid-header"} ${
+        isMenuOpen ? "header--open" : ""
+      }`}
+    >
+      <button className={`hamburger ${hamburgerClass}`} onClick={toggleMenu}>
+        <span className="hamburger__line"></span>
+        <span className="hamburger__line"></span>
+        <span className="hamburger__line"></span>
+        <span className="hamburger__line"></span>
+      </button>
+
+      <nav className={`nav ${isMenuOpen ? "nav--open" : ""}`}>
         <ul className="nav-list">
           <AnimatePresence className="nav-list__item">
             {links.map((link) => (
@@ -48,13 +71,16 @@ const Header = () => {
                       : ""
                   }`}
                   to={link.path}
+                  onClick={() => setIsMenuOpen(false)}
                 >
                   {link.name}
                   {location.pathname === link.path && (
                     <motion.div
-                      layoutId="activeBackground"
-                      transition={spring}
                       className="active-background"
+                      {...(isTabletOrDesktop && {
+                        layoutId: "activeBackground",
+                        transition: spring,
+                      })}
                     />
                   )}
                 </MotionLink>

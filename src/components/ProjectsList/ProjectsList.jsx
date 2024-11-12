@@ -60,6 +60,7 @@ const Projects = () => {
   ];
   return (
     <section id="projects" className="projects">
+      <h2 className="projects__heading">Projects</h2>
       <div className="projects-list">
         {projectsData.map((projectData) => {
           return <Project key={projectData.id} projectData={projectData} />;

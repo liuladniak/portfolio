@@ -1,4 +1,5 @@
 @use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
 
 .hero__desc {
   line-height: 100%;
@@ -8,8 +9,15 @@
   color: $main--1;
 }
 .liu-icon--about {
-  position: absolute;
-  scale: 80%;
-  left: 14rem;
-  bottom: -13.6rem;
+  width: 10%;
+  align-self: flex-end;
+  display: none;
+
+  @include tablet {
+    width: unset;
+    position: absolute;
+    scale: 80%;
+    left: 14rem;
+    bottom: -13.6rem;
+  }
 }

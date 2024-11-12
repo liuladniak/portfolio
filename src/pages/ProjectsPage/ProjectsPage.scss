@@ -8,9 +8,10 @@
   justify-content: center;
   color: $main--1;
   overflow: hidden;
-  margin: 3.2rem;
+  margin: 0.8rem;
 
   @include tablet {
     margin: unset;
+    margin: 0 3.2rem;
   }
 }

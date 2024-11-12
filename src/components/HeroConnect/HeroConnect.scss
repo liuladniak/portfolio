@@ -1,4 +1,5 @@
 @use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
 
 .hero__desc--connect,
 .hero__heading--connect {
@@ -6,8 +7,15 @@
 }
 
 .liu-icon--connect {
-  position: absolute;
-  scale: 70%;
-  left: 140px;
-  bottom: -15.8rem;
+  width: 40%;
+  bottom: 0;
+  margin-top: 2.4rem;
+
+  @include tablet {
+    position: absolute;
+    width: unset;
+    scale: 70%;
+    left: 140px;
+    bottom: -15.8rem;
+  }
 }

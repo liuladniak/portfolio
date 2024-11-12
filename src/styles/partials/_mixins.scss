@@ -8,6 +8,11 @@
     @content;
   }
 }
+@mixin tablet-lg {
+  @media screen and (min-width: $tablet-lg) {
+    @content;
+  }
+}
 
 //Desktop breakpoint from 1280px onwards:
 @mixin desktop {
