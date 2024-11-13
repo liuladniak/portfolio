@@ -8,9 +8,9 @@ const HeroAbout = () => {
         <h1 className="hero__heading hero__heading--about">
           <span className="bold">About</span> Liu
         </h1>
-        <div className="liu-icon--about">
+        {/* <div className="liu-icon--about">
           <img className="liu-icon" src={liuImg} alt="Liu's icon" />
-        </div>
+        </div> */}
       </div>
       <div className="hero__col">
         <p className="hero__desc hero__desc--about">

@@ -9,9 +9,9 @@ const HeroProjects = () => {
         <h1 className="hero__heading hero__heading--projects">
           Liu's <span className="bold">Projects</span>
         </h1>
-        <div className="liu-icon--projects">
+        {/* <div className="liu-icon--projects">
           <img className="liu-icon" src={liuImg} alt="Liu's icon" />
-        </div>
+        </div> */}
       </div>
       <div className="hero__col">
         <p className="hero__desc hero__desc--projects">

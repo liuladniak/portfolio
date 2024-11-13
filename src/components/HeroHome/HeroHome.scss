@@ -21,11 +21,12 @@
     &-icon {
       display: flex;
       flex-direction: column;
+      justify-content: space-between;
       align-items: flex-start;
       gap: 3rem;
 
       @include tablet {
-        display: block;
+        display: flex;
         position: relative;
       }
     }
@@ -34,7 +35,6 @@
   .liu-icon--hero {
     width: 45%;
     align-self: flex-end;
-    display: none;
 
     @include tablet {
       position: absolute;

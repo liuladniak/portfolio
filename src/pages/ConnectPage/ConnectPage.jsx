@@ -9,9 +9,6 @@ const ConnectPage = () => {
     <section className="connect">
       <HeroConnect />
       <ConnectLinks />
-      <div className="liu-icon--connect-mobile">
-        <img className="liu-icon" src={liuImg} alt="Liu's icon" />
-      </div>
     </section>
   );
 };

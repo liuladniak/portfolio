@@ -8,9 +8,9 @@ const HeroHome = () => {
         <h1 className="hero__heading">
           Hi, I'm <span className="bold">Liu</span>!
         </h1>
-        <div className="liu-icon--hero">
+        {/* <div className="liu-icon--hero">
           <img className="liu-icon" src={liuImg} alt="Liu's icon" />
-        </div>
+        </div> */}
       </div>
       <div className="hero__col">
         <p className="hero__desc">

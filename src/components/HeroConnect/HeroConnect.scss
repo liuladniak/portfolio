@@ -5,17 +5,17 @@
 .hero__heading--connect {
   color: $main--1;
 }
-
+.hero--connect {
+  padding-bottom: 0;
+}
 .liu-icon--connect {
   width: 40%;
-  bottom: 0;
   margin-top: 2.4rem;
+  align-self: center;
 
   @include tablet {
-    position: absolute;
-    width: unset;
-    scale: 70%;
-    left: 140px;
-    bottom: -15.8rem;
+    align-self: center;
+    width: 20rem;
+    height: 20rem;
   }
 }
