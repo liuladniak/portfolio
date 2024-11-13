@@ -159,7 +159,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 0.6rem;
+  gap: 0.2rem;
   border: none;
   cursor: pointer;
   color: white;
@@ -169,7 +169,7 @@
   z-index: 99;
   display: flex;
   flex-wrap: wrap;
-  width: 4rem;
+  width: fit-content;
   height: 4rem;
 
   &--primary .hamburger__line {
@@ -179,7 +179,7 @@
     }
   }
 
-  &--secondary .hamburger__line {
+  .hamburger__line {
     background-color: $main--1;
     &:hover {
       background-color: $accent--2;

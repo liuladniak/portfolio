@@ -18,7 +18,7 @@ const About = () => {
       <div className="about__desc">
         <h2 className="about__heading">About Me</h2>
         <div className="about__content">
-          <p className="about__content-part">
+          <div className="about__content-part">
             {!isTabletOrDesktop && (
               <div className="about__photo about__photo--mobile">
                 <img src={myPhoto} alt="photo of myself" />
@@ -33,7 +33,7 @@ const About = () => {
             dive deep into <span className="highlight">full stack</span>{" "}
             development and earn a{" "}
             <span className="highlight">Software Engineering</span> diploma.
-          </p>
+          </div>
 
           <p
             className={`about__content-part about__content-part--2 
