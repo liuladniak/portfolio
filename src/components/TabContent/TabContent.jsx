@@ -2,11 +2,6 @@ import ProjectLinks from "../ProjectLinks/ProjectLinks";
 import checkIcon from "../../assets/icons/done.svg";
 import flagIcon from "../../assets/icons/flag.svg";
 
-// import mediaTab1 from "../../assets/videos/video-project1.mp4";
-// import mediaTab2 from "../../assets/images/dashboardImg.png";
-// import mediaTab3 from "../../assets/images/Local Gardens Homepage.png";
-// import mediaTab4 from "../../assets/images/PizzaShop.png";
-
 import "./TabContent.scss";
 
 const TabContent = ({
@@ -33,7 +28,7 @@ const TabContent = ({
           {media?.type === "video" ? (
             <video src={media.src} autoPlay loop muted />
           ) : (
-            <img src={`http://localhost:5173/${media.src}`} alt={title} />
+            <img src={`${media.src}`} alt={title} />
           )}
         </div>
 
