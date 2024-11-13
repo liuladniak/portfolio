@@ -3,7 +3,7 @@ import Project from "../Project/Project";
 import project1Img from "../../assets/images/citygo-homepage.png";
 import project2Img from "../../assets/images/Local Gardens Homepage.png";
 import project3Img from "../../assets/images/sunsetpizza.png";
-import project4Img from "../../assets/images/dashboardImg.png";
+import project4Img from "../../assets/images/dashboard1.png";
 import videoProject1 from "../../assets/videos/video-project1.mp4";
 
 const Projects = () => {

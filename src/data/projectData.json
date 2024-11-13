@@ -88,7 +88,7 @@
     "description": "The CityGo Dashboard is an admin interface for managing tours, bookings, and user data for the CityGo Travel Booking app. Built with React and integrated with PostgreSQL, it allows administrators to easily view, add, and edit tour details, track booking information, and manage user accounts. It also includes authentication to ensure secure access and CRUD functionality for managing the app’s data efficiently.",
     "media": {
       "type": "image",
-      "src": "dashboardImg.png"
+      "src": "dashboard2.png"
     },
     "links": {
       "github": "https://github.com/liuladniak/citygo"
