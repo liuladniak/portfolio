@@ -7,7 +7,7 @@
     "description": "The app addresses the common challenges travelers encounter when planning city tours, such as cumbersome booking processes and unclear navigation. By providing a streamlined user experience, the app ensures secure user management and simplifies the booking journey. With CityGo, travelers can easily discover and book their ideal city tours, making their travel planning efficient and enjoyable.",
     "media": {
       "type": "video",
-      "src": "../../public/video-project1.mp4"
+      "src": "video-project1.mp4"
     },
     "featuresCompleted": [
       {
@@ -88,7 +88,7 @@
     "description": "The CityGo Dashboard is an admin interface for managing tours, bookings, and user data for the CityGo Travel Booking app. Built with React and integrated with PostgreSQL, it allows administrators to easily view, add, and edit tour details, track booking information, and manage user accounts. It also includes authentication to ensure secure access and CRUD functionality for managing the app’s data efficiently.",
     "media": {
       "type": "image",
-      "src": "../../public/dashboardImg.png"
+      "src": "dashboardImg.png"
     },
     "links": {
       "github": "https://github.com/liuladniak/citygo"
@@ -103,7 +103,7 @@
     "description": "Local Gardens is a home decor store app that offers a seamless shopping experience. The app showcases a variety of decor products and provides users with a clean, intuitive interface for browsing and selecting items. It's fully responsive, ensuring smooth navigation across devices, and integrates features like product filters, detailed descriptions, and a visually appealing design to enhance the shopping experience.",
     "media": {
       "type": "image",
-      "src": "../../public/Local Gardens Homepage.png"
+      "src": "Local Gardens Homepage.png"
     },
     "links": {
       "github": "https://github.com/liuladniak/local-gardens"
@@ -118,7 +118,7 @@
     "description": "Sunset Pizza Shop is an app I developed as part of a real-world freelance project for a local business. It provides a user-friendly engaging way. The app allows customers to easily browse through the menu, view pizza options, and explore different categories. It’s fully responsive, ensuring smooth navigation across devices, and features an interactive map integration to help users locate the shop with ease. While it doesn't yet include online ordering, the app offers a simple, accessible way to learn about the shop and its offerings.",
     "media": {
       "type": "image",
-      "src": "../../public/PizzaShop.png"
+      "src": "PizzaShop.png"
     },
     "links": {
       "live": "https://sunset-pizza-shop.netlify.app/",
