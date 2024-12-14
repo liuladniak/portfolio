@@ -3,7 +3,7 @@ import Project from "../Project/Project";
 import project1Img from "../../../public/citygo-cropped.png";
 import project2Img from "../../../public/LG-cropped.png";
 import project3Img from "../../../public/PizzaShop-cropped.png";
-import project4Img from "../../../public/dashboard1.png";
+import project4Img from "../../../public/dash.png";
 import videoProject1 from "../../assets/videos/video-project1.mp4";
 
 const Projects = () => {
