@@ -20,7 +20,7 @@ const Projects = () => {
         "A city tour booking app with features like user authentication, tour search & filtering, interactive map, and a custom calendar. Users can manage bookings through a shopping cart, all within a responsive, user-friendly design.",
       stack: ["React.js", "SASS", "Node.js", "PostgreSQL", "JWT Auth"],
       github: "https://github.com/liuladniak/citygo",
-      live: "https://citygo.liuladniak.io/",
+      live: "https://citygo.liuladniak.com/",
     },
     {
       id: 2,
